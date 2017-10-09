@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+
+    <title> Puppet </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+          <ul class="nav nav-justified nav-pills" role="tablist">
+	    <li class="active active badge"><a href="../index.html">Home</a></li>
+	    <!----submenu in the contents ------->
+ 
+	    <li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+			    <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+			    <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+			    <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+			    <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+			    <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+			</ul>
+                    </li>
+		<li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Devops<b class="caret"></b></a> 
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+			<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>
+			</ul>
+	    </li>	
+            <li class="active badge"><a href="../contact.html">Contact</a></li>
+	</ul>
+        </nav>
+      </div>
+     </div>
+     
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Configuring puppet in AWS environment</h2>
+	   <hr></hr>
+          <p class="text-danger bluefont">What is AWS?</p>
+          <p class="pfont">AWS stands for amazon web services, which is secure cloud services platform.i.e on-demand delivery of IT resources and applications.
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont"> Assuming you already have the two instances running on the aws.</p>
+	 	<p class="pfont">Lets set up the puppet master.</p>
+		<pre>[puppetmaster#] cat /etc/hosts
+52.24.20.183  ip-172-31-34-216.us-west-2.compute.internal
+#client ip    #client private dns
+		</pre>
+		<p> Procedure to figure out the private dns from CLI </p>
+		<pre>ifconfig -a | grep inet "addr:"
+inet addr:172.31.34.216  Bcast:172.31.47.255  Mask:255.255.240.0
+inet addr:127.0.0.1  Mask:255.0.0.0
+
+		</pre>
+		<pre>nslookup 172.31.34.216 
+Server:		172.31.0.2
+Address:	172.31.0.2#53
+
+Non-authoritative answer:
+216.34.31.172.in-addr.arpa	name = ip-172-31-34-216.us-west-2.compute.internal.
+		</pre>
+		<p class="bluefont">Install the puppet master</br></p>
+		<pre>sudo rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm
+yum install puppet-server facter -y
+service puppetmaster start
+		</pre>
+		<p>Firewall setup </p>
+		<pre>
+# iptables -I INPUT -p tcp -m tcp --dport 8140 -j ACCEPT 
+# iptables -I INPUT -p tcp -m tcp --dport 8141 -j ACCEPT 
+# iptables -I INPUT -p tcp -m tcp --dport 822 -j ACCEPT
+# service iptables save 
+# service iptables restart 
+		</pre>
+		<p> Make sure puppetmaster is running  and you are able to ping the puppetclient</p>
+		<pre>[puppetmaster]# service puppetmaster status 
+#ping ip-172-31-34-216.us-west-2.compute.internal
+
+		</pre>
+		</div>
+		<div class="col-lg-6">
+	   <p class="bluefont">Lets setup the puppet client</br></p>
+		<p>2) Add the line on  /etc/hosts file</br></p>
+                <pre>[puppetclient#] cat /etc/hosts
+52.33.20.182  ip-172-31-34-217.us-west-2.compute.internal 
+#master ip    #master private dns
+                </pre>
+		<p class="bluefont">Install the puppet client</br></p>
+		<pre>sudo rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm 
+yum install puppet facter -y
+service puppet start
+                </pre>
+                <p>Firewall setup </p>
+                <pre>
+# iptables -I INPUT -p tcp -m tcp --dport 8140 -j ACCEPT 
+# iptables -I INPUT -p tcp -m tcp --dport 8141 -j ACCEPT
+# iptables -I INPUT -p tcp -m tcp --dport 822 -j ACCEPT
+# service iptables save 
+# service iptables restart 
+                </pre>
+		<p>Make sure puppet client is running and you are able to ping the pupeptmaster </p>
+		<pre>[puppetclient]#service puppet status 
+#ping ip-172-31-34-217.us-west-2.compute.internal
+
+		</pre>
+		<p> Add the following line in the /etc/puppet/puppet.conf under the [main] section </p>
+		<pre>server = ip-172-31-34-217.us-west-2.compute.internal </pre>
+		<p> Restart the puppet </p>
+       </div>
+		
+      </div>
+	<p class="bluefont"> See the previous section for detail information about signing the certification between master and client.<a href="puppet.html">Link here</a></p>
+		
+
+	<nav>
+  		<ul class="pager button active">
+    			<li><a href="puppet.html"><span aria-hidden="true">&larr;</span>Previous</a></li>
+    			<li><a href="amodule.html">Next<span aria-hidden="true">&rarr;</span></a></li>
+  		</ul>
+	</nav>
+     <hr></hr>
+ </div>
+  </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="#" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

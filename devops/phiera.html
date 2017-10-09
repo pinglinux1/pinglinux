@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+
+    <title> Puppet </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+          <ul class="nav nav-justified nav-pills" role="tablist">
+	    <li class="active active badge"><a href="../index.html">Home</a></li>
+	    <!----submenu in the contents ------->
+ 
+	    <li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+			    <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+			    <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+			    <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+			    <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+			    <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+			</ul>
+                    </li>
+		<li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Devops<b class="caret"></b></a> 
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+			<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>
+
+			</ul>
+	    </li>	
+            <li class="active badge"><a href="../contact.html">Contact</a></li>
+	</ul>
+        </nav>
+      </div>
+     </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="2973793853"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Hiera </h2>
+	   <hr></hr>
+          <p class="text-danger bluefont">What is Hiera ?</p>
+          <p class="pfont">Hiera is a hierarchical value store place, that can be used to provide data or information for your puppet manifests.Puppet 3 and up has hiera installed by default.Hiera makes your data separate from the manifest, so that the modules code remains untouched. This helps your modules to be clean and reusuable. </p>
+	<p class="pfont">Shareable data like OS-Specific data can be used in local variable or templates </p>
+	<p class="pfont"> Private data like SSL key, private ssh key are used in hiera </p>
+		<p class="pfont">Hiera can be configured in two different forms</br> 1) YAML => Yaml markup language </br> 2) JSON => javascript object notation </p>
+		<p>  Hiera requires ruby </p>
+	  </div>
+    </div>	
+
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont"> Hiera structure</p>
+	  <p class="pfont">Default location where puppet will look for hiera config file </p>
+	   <pre> vi /etc/puppet/hiera.yaml </pre>
+	 <pre> 	:hierarchy:
+		- "node/%{::fqdn}"
+    	        - environments/%{environment}
+    		- common
+    		- users
+	:backends:
+    		- yaml    # will look for .yaml file only
+			  # we can specify -json file as well
+	:yaml:
+        :datadir: '/etc/puppet/hieradata'  # will look at this directrory
+		</pre>
+	 	 <pre>
+		 |--- hiera.yaml
+	         |--- hieradata 
+   		 |       |--- node
+    		 |         |--- client.example.com.yaml
+   		 |         |--- hostname.yaml
+    		 |         |--- hostname2.yaml
+    		 |--- manifests
+    		 |   	 |-- site.pp
+    		 |--- modules -> ../puppet-common/modules/
+		</pre>
+	  </div>
+	  <div class="col-lg-6">
+	   <p class="bluefont">Explanation: </br></p>
+	   <p class="pfont">:hierarchy setting is used to define your own hierarchy of data source(which files to look first and which to look last). </br>
+	1) Default value: "common" (i.e. a single-element hierarchy whose only level is named “common.”</br>
+    2) :datadir defines the location of the data source files		  
+	</br>
+    3) :backends defines the type of files eg, yaml files or json files. it will also follow the order. If yaml is defined first and json second, it will look for all .yaml files in the data source folder provided by the :datadir settings.
+	</p>
+        </div>
+     </div>
+	<hr> <hr>
+	<h2> First example on hiera </h2>
+	 <div class="row">
+          <div class="col-lg-6">
+           <p class="pfont">We have created the hieradata directory in the /etc/puppet/ location. Hieradata contains the node directory which will have the .yaml file. For each client machine, we will create the new hostname.yaml file from which manifest will get information.it will only look for matching hostname.</p>
+	  <pre> cat /etc/puppet/hieradata/node/pupetmaster.yaml </pre>
+	  <img src="../puppetpict/hiera3.png" alt="hiera" style="width:120%;height:100%;">
+	  <pre> cat /etc/puppet/manifest/hiera.pp</pre>
+	  <img src="../puppetpict/hiera1.png" alt="hiera" style="width:120%;height:100%;">
+	  </div>
+	
+          <div class="col-lg-6">
+           <p class="bluefont"> Testing if the hiera is getting the value from hieradata directroy</p>
+	  <pre>puppet apply hiera.pp </pre>
+	  <img src="../puppetpict/hiera2.png" alt="hiera" style="width:100%;height:100%;">
+	  <p> </p>
+          <p class="pfont"> Here, hello world value is pulled from .yaml file in node directory </p>  
+	</div>
+	</div>
+	<hr> <hr>
+	<h2>Reusing the modules in different nodes, by creating the heira files.</h2>
+	<div class="row">
+          <div class="col-lg-6">
+	   <p class="bluefont">Firstly, Create hiera files in the node directory of hiera directory. Files name should match the hostnme of the client.</p>
+           <p class="pfont"></p>
+	  <img src="../puppetpict/hiera5.png" alt="hiera" style="width:100%;height:100%;">
+	  <p  class="pfont">Puppet modules has been created under the name of info. </p>
+	  <pre> vi /etc/puppet/modules/info/manifests/information.pp </pre>
+	  <img src="../puppetpict/hiera6.png" alt="hiera" style="width:100%;height:100%;">
+	  <pre>vi /etc/puppet/modules/info/manifests/init.pp</pre>
+	  <img src="../puppetpict/hiera7.png" alt="hiera" style="width:100%;height:100%;">
+	  <pre>vi /etc/puppet/manifest/site.pp </pre>
+	  <pre>node 'puppetclient','puppetserver' {
+		include info
+	 }
+		 </pre>
+	  </div>
+          <div class="col-lg-6">
+	  <p class="bluefont">Running the puppet agent from the client machine, as well as from the server</p>
+           <p class="pfont"><p>
+	  <pre> [root@puppetclient~]#puppet agent -t </pre>
+	 <p class="command">
+	Info: Retrieving pluginfacts</br>
+	Info: Retrieving plugin</br>
+	Info: Caching catalog for puppetclient.us-west-2.compute.internal</br>
+	Info: Applying configuration version '1451966419'</br>
+	Info: /Stage[main]/Info::Information/File[/tmp/msg.txt]: Filebucketed /tmp/msg.txt to puppet with sum 9ec4698c1d5f0055bce476a3fde15d98</br>
+	Notice: /Stage[main]/Info::Information/File[/tmp/msg.txt]/content: content changed '{md5}9ec4698c1d5f0055bce476a3fde15d98' to '{md5}7b8f2129eadd3cc2aa854ffb55f7ae39'</br>
+	Notice: Finished catalog run in 0.06 seconds</br>
+	 </p>
+	<pre>[root@puppetclient~]# cat /tmp/msg.txt </pre>	
+	<pre>I am a client </pre>  
+	<p> Here, when you run the puppet master, it will pull the hiera value based on the hostname.
+	<pre>puppet agent -t </pre>
+	<pre>[root@puppetmaster~]# cat /tmp/msg.txt </pre>
+        <pre>I am a puppet master </pre>    
+	 </div>
+	</div>
+	<hr><hr>
+	<h2>Puppet class getting its parameters value from hiera lookup. </h2>
+	    <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont"> In this example, $parameter's value gets set when `myclass` is eventually declared.</p>
+           <p class="pfont"></p>
+	   <pre>[root@puppetmaster~]# vi /etc/puppet/hieradata/common.yaml </pre>
+	      <img src="../puppetpict/hiera10.png" alt="hiera" style="width:100%;height:100%;">
+		<pre>[root@puppetmaster~]# vi /etc/puppet/manifest/site.pp </pre>
+	      <img src="../puppetpict/hiera9.png" alt="hiera" style="width:100%;height:100%;">
+          </div>
+          
+          <div class="col-lg-6">
+          <p class="bluefont"></p>
+           <p class="pfont"><p>
+	 <pre>[root@puppetclient~]# puppet agent -t </pre>
+	  <img src="../puppetpict/hiera8.png" alt="hiera" style="width:100%;height:100%;">
+         </div>
+        </div>
+      <hr> <hr>
+     <h2> Three types of lookup in heira </h2>
+      <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">Priority(default),Array merge, Hash merge </p>
+	   <p class="pfont">Sample files </p>
+	   <pre>
+		 # puppetclient.yaml
+    			msg: A
+
+    		# common.yaml
+    			msg:
+      			- B
+      			- C
+
+	   </pre>
+	   <p class="pfont">1) A priority lookup gets a value from the most specific matching level of the hierarchy </p>
+	   <p class="command">it will only Return A </p>
+	   <p class="pfont">2) An array merge lookup assembles a value from every matching level of the hierarchy</p>
+	  <p class="command"> Array merge lookup would return a value of [A, B, C]. </p>
+	  <p class="pfont">3) A hash merge lookup assembles a value from every matching level of the hierarchy,then merges the hashes into a single hash </p>
+           <p class="command">It only works when every value found is a hash and will crash,if any of the values found in the data sources are strings or arrays </p>	
+    		<pre>
+			#puppetclient.yaml
+			msg
+			  A :  "apple"
+		
+			#common.yaml
+			  msg:
+			   B : "BOY"
+                           C : "CAT"
+
+		</pre>
+		<pre> it will return the value in the following format {A => "apple",B=>"Boy",c=>"cat"} </pre>
+	  </div>
+	<div class="col-lg-6">
+           <p class="bluefont"> </p>
+      </div>
+    </div>
+	<nav>
+  		<ul class="pager button active">
+    			<li><a href="pmodules.html"><span aria-hidden="true">&larr;</span>Previous</a></li>
+    			<li><a href="pmodulestemplate.html">Next<span aria-hidden="true">&rarr;</span></a></li>
+  		</ul>
+	</nav>
+     <hr></hr>
+
+  </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="#" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

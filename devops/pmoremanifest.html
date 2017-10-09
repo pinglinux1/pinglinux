@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+
+    <title> Puppet </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+          <ul class="nav nav-justified nav-pills" role="tablist">
+	    <li class="active active badge"><a href="../index.html">Home</a></li>
+	    <!----submenu in the contents ------->
+ 
+	    <li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+			    <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+			    <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+			    <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+			    <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+			    <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+			</ul>
+                    </li>
+		<li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Devops<b class="caret"></b></a> 
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+			<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>
+			</ul>
+	    </li>	
+            <li class="active badge"><a href="../contact.html">Contact</a></li>
+	</ul>
+        </nav>
+      </div>
+     </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="2973793853"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Manifest example </h2>
+	   <hr></hr>
+          <p class="text-danger bluefont">Use of Array</p>
+	    <p class="pfont">You can start the muttiple services at a time </p>
+           <pre>$array=["httpd","rpcbind","network"] 
+		service { $array:
+ 		        ensure => running  #Similar to service httpd start
+		}
+	 </pre>
+	  
+	  </div>
+	</div>
+	        <hr> <hr>
+        <div class="row">
+                <div class="col-lg-6">
+           <p class="bluefont">Start the service</br></p>
+                <pre>service {'httpd'
+                         ensure => 'start',
+                }
+                </pre>
+                <pre> To stop the service use, ensure => stop</pre>
+                </div>
+                <div class='col-lg-6'>
+           <p class="bluefont">Ensure a service to start on boot</p>
+                <p class="pfont">chkconfig httpd on </p>
+                <pre> service {'httpd':
+                                    enable => true,
+                    }   
+                </pre>
+                <pre> To disable the service to start on boot,enable => false, </pre>
+                </div>
+        </div>
+	<hr><hr>
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont"> Puppet Variable </p>
+	 	<p class="pfont">You can store the value in the variable and can use anywhere in the manifest </p>
+		<pre>$msg = "hello World"
+	        file { '/tmp/msg.txt':
+			ensure => present, # creates the file
+			owner => root,     # Changes the owner of the file to root
+			group => root,     # changes the group to root
+			mode => 777,       # changes persmion to rwx
+			content => $msg,   # echo $msg > msg.txt
+		 }
+		</pre>
+	  </div>
+	  <div class="col-lg-6">
+	   <p class="bluefont">Creating Users and groups</br></p>
+	   <p class="pfont">You can create groups and user with the help of manifest </p>
+	  <pre> group { "newgroup":   # name of group newgroup
+ 		   ensure => present, # create new group
+    		   gid    => '123456', # Group id 123456
+	}
+		<b>#removing the group ensure =>absent,</b>
+  users {'tomuser':
+ 		ensure => present,   #creates the user named tomuser
+    		 uid =>   '12345',   # Assign user id 12345 to tomuser
+    		 gid =>    '123456',  # Assign group id 12345 to tom
+    		 home =>    '/home/bikramuser', # location for the home directory
+    		 password => '$ad3456.',      # password for tomuser
+                 groups => ['root'],   #also include this user in group root
+    		 shell   =>    '/bin/bash',     # user /bin/bash 
+		 managehome => true,    	# This will create the home directory
+		require => Group['newgroup'],   # Since puppet doesnt follow the ordering,
+						#make sure group is created first before user.
+}
+	</pre>
+        </div>
+       
+       
+      </div>
+	<hr> <hr>
+
+	   <div class="row">
+                <div class="col-lg-6">
+           <p class="bluefont">Creating directories, files and contents for files</br></p>
+		<pre>$dir =['/tmp/one/','/tmp/one/two/','/tmp/one/two'/]
+		file{$dir: #or '/tmp/one': # create one directory or use array to create many
+    		ensure =>directory,
+    		owner      =>root,
+    		group   =>root,
+    		mode  =>777,
+	}		</pre>
+		
+
+
+		<pre>file{'/tmp/newfile':
+    	ensure => present,
+	owner      => root,
+	group => root,
+	mode    =>750,
+	content => 'hello world',    
+}</pre>
+                </div>
+                <div class="col-lg-6">
+           <p class="bluefont">Only add the file if its absent,do not replace.</br></p>
+	<pre>file {'tmp/newfile':
+ 		   replace => no,
+    		   ensure => present,
+    		   content  => 'From puppet\n',
+    		   mode    => 777,
+		}
+
+			</pre>
+		<p class="bluefont">Reduce Duplicated File Attributes </p>
+		<pre>File {
+    ensure => present,
+    owner =>root,
+    group => root,
+    mode => 777,
+}
+file {'/tmp/newfile':
+    content => 'Above setting will get applied on me\n',
+}
+file{'/tmp/newfile2':
+    content => 'Above settings will get upplied on me as well'
+}
+
+</pre>
+                </div>
+        </div>
+
+	 <hr> <hr>
+
+           <div class="row">
+                <div class="col-lg-6">
+           <p class="bluefont">Solving the dependencies</br></p>
+		<p class="pfont">Ordering of dependenices </p>
+		<p class="pfont"> 1) before => Applies a resource before the target resource. </br>
+				2) require => Applies a resource after the target resource. </br>
+				3)notify => Applies a resource before the target resource. The target resource refreshes if the notifying resource changes</br>
+				4)subscribe => Applies a resource after the target resource. The subscribing resource refreshes if the target resource changes.</br></p>
+		 <pre>If two resources need to happen in order, you can either  put a before </br> attribute in the prior one or a require attribute in </br>the subsequent one.The same is true of notify and subscribe. </pre>
+                </div>
+                <div class="col-lg-6">
+           <p class="bluefont">Dependency example</br></p>
+	<pre>#before   #do this before configuring the sshd_config file on the below. </pre>
+	package { 'openssh-server':</br>
+      	  ensure => present,</br>
+     	#before => File['/etc/ssh/sshd_config'], </br>
+	}
+
+	<pre>#require   # make sure package installation happens before coming to this file</pre>
+	file { '/etc/ssh/sshd_config':   
+           ensure  => file,</br>
+          source  => 'puppet:///modules/sshd/sshd_config',</br>
+          require => Package['openssh-server'],</br>
+	}
+	<p class="pfont">
+	<pre>#notify   # this resources will be applied before one mentioned with notify </br>and the target resource(below ssh) refreshes if the notifying resource(sshd_config) changes.</br>services will restart, mounts will unmount and re-mount</pre>
+	file { '/etc/ssh/sshd_config':</br>
+          ensure => file,</br>
+          source => 'puppet:///modules/sshd/sshd_config',</br>
+          notify => Service['sshd'],</br>
+	}
+	<pre>#subscribe     # it will call the file above first and this sshd service </br> will get refreshes if the target resource (above file )changes.</pre>
+	</p>	service { 'sshd': </br>
+		ensure => running,        # service sshd start</br>
+		enable => true,           # service should be enabled to start at boot,chkconfig</br>
+		#subscribe => File['sshd_config'],   </br> 
+	}
+	</p>
+
+
+
+
+
+
+
+
+                </div>
+        </div>
+
+	 <hr> <hr>
+
+           <div class="row">
+                <div class="col-lg-6">
+           <p class="bluefont">Writing the Puppet manifest for running a shell command
+		</br></p>
+		<pre>exec{'httpd': # start the http service
+    		command =>'/etc/init.d/httpd start',
+    		#require =>'Package['httpd'],
+    		#path => '/usr/local/bin:/bin/'   
+		}</pre>
+ 		<pre>exec{'create_file':  #do not create file if it exists
+    		command =>'/bin/mkdir /tmp/bikram',
+    		creates =>'/tmp/bikram', # The command will only run if the file doesn't exist
+	}
+	</pre>
+		<pre>exec{'create_file':
+    		command => '/bin/mkdir /tmp/bikram',
+    		onlyif  => '/bin/ls -l | /bin/grep bikram1', # Runs the exec only if the command returns 0, i.e returns true
+		onlyif => ['ls-l | grep bikram1 ','ls -l |grep bikram2 '] #if there are two conditions to check
+	}
+
+	</pre> 
+              </div>
+                <div class="col-lg-6">
+           <p class="bluefont">Hiding the messsage displayed by the exec, when it returns zero
+		</br></p>
+<pre>exec{
+	 path => '/bin/',
+    	 command => 'echo hello world!' #Specifies actual command to execute
+    	 logoutput => true, # Display msgs only if fails, false to hide the msg 
+	 cwd => '/tmp/',    # Sets the directory from which to run the command 
+	refreshonly = true, # Refreshes the command only when a dependent object is changed. Used with subscribe and notify 
+	}</pre>
+                </div>
+        </div>
+
+	 <hr> <hr>
+
+           <div class="row">
+                <div class="col-lg-6">
+           <p class="bluefont">Adding debug messages to your manifests,which will show in the client during puppet agent -t</br></p>
+	
+		<pre>
+		notfify {' file has been installed': 
+		path => true,
+		}
+		</pre>
+                </div>
+                <div class="col-lg-6">
+           <p class="bluefont">Setting up the cron job using puppet</br></p>
+		<pre>
+		file {'/etc/puppet/createdir.sh':
+        	ensure => present,
+    		content =>'#!/bin/bash\n mkdir /tmp/helloworld > /etc/puppet/createdir.sh',
+		mode => 777,
+		}
+		cron {'create_file':
+    		command =>'/etc/puppet/createdir.sh',
+		user => root,    
+		hour => '*',  #[23,5]
+    		minute =>'*/5',
+    		#weekday => '*',
+    		#month =>'*',
+    		#date =>'*',
+         	require => File['/etc/puppet/createdir.sh']
+		</pre>
+	  </div>
+        </div>
+
+
+
+	<nav>
+  		<ul class="pager button active">
+    			<li><a href="pmanifest.html"><span aria-hidden="true">&larr;</span>Previous</a></li>
+    			<li><a href="pclass.html">Next<span aria-hidden="true">&rarr;</span></a></li>
+  		</ul>
+	</nav>
+     <hr></hr>
+
+  </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="#" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

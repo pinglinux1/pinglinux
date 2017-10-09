@@ -1,0 +1,49 @@
+  	/* Title color */
+        .title {
+		color:blue;
+	}
+        /* footer copyright*/
+	.copyright{
+		text-align:center;
+	}
+	/* last dev called footerdev */
+	.footerdev {
+		background-color:black;
+
+	}	
+	/* the horizontal line */
+	hr {
+           margin-bottom: 3em;
+	}
+	
+	/* font size for p*/
+	.pfont{
+		font-size:150%;
+		line-height:125%;
+	}
+         /* headings are colored blue */
+	.bluefont{
+		font-size:175%;
+		color:blue;
+	}
+	.bs-example{
+                margin: 20px;
+
+        }
+        .open .dropdown-toggle {
+                color: green ;
+                background-color: #555 !important;
+        }
+
+        /* Dropdown links */
+        .dropdown-menu li a {
+                color: black !important;
+        }
+
+        /* On hover, the dropdown links will turn Blue */
+        .dropdown-menu li a:hover {
+                background-color: blue !important;
+                opacity:0.9;
+        }
+	
+	

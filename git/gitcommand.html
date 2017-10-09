@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title> Git Command</title>
+
+     <style type="text/css">
+}
+    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+    <link href="../css/home.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	</ul>
+    <nav>
+	<ul class="nav nav-justified nav-pills" role="tablist" >
+            <li class="active badge"><a href="../index.html">Home</a></li>
+            <!----submenu in the contents ------->
+
+            <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+                        </ul>
+                    </li>
+                <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle" >Devops<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+
+                                <li><a href="../vagrant/vagrant.html">Vagrant</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html">Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>
+                        </ul>
+            </li>
+            <li class="active badge"><a href="../contact.html">Contact</a></li>
+        </ul>
+
+        </nav>
+      </div>
+     </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="2973793853"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Git Commands</h2>
+          <hr> </hr> 
+          <p class="text-danger bluefont">Basic Git commands </p>
+	  <p class="pfont">init,clone,add, commit,log, push, status </p>
+       </div>
+	        
+       
+      </div>
+
+	<div class="row">
+		<div class="col-lg-6">
+		<p class="bluefont"> git init </p>
+		<p class="pfont"> Initializing the local directory as a Git repository. </p>
+		<pre>[root@puppetmaster html]# git init
+Initialized empty Git repository in /var/www/html/.git/ </pre>
+		</div>
+		<div class="col-lg-6">
+		<p class="bluefont">git clone {repo url} </p>
+		<p class="pfont">Clones the repository into current directory</p>
+		<pre>[root@puppetmaster html]# git clone https://github.com/pinglinux0/hello_world.git
+Initialized empty Git repository in /var/www/html/hello_world/.git/
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 2), reused 8 (delta 1), pack-reused 0
+Unpacking objects: 100% (9/9), done. </pre>
+		</div>
+	</div>
+
+	 <div class="row">
+              <div class="col-lg-6">
+		  <p class="bluefont"> git add</p>
+		  <p class="pfont">Adds the file to be committed. </p>
+		 <pre > git add . (adds all the file) </br>git add filename (adds individual file</pre>
+		
+                </div>
+		<div class="col-lg-6">
+		 <p class="bluefont"> git commit </p>
+		 <p class="pfont">Saves the commited stage with the Messages</p>
+		<pre >git commit -m "new file added" </pre>
+		</div>
+        </div>
+
+	   <div class="row">
+                <div class="col-lg-6">
+                <p class="bluefont"> git status </p>
+                <p class="pfont"> shows the file that has been modified but hasn't been committed </p>
+		<pre >git status
+[root@puppetmaster html]# ls
+hello_world  index.html  index.php  newfile  README.md
+[root@puppetmaster html]# echo "lets modify new file" > newfile 
+[root@puppetmaster html]# git status
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   newfile
+#
+no changes added to commit (use "git add" and/or "git commit -a") </pre>
+                </div>
+                <div class="col-lg-6">
+                <p class="bluefont">git log  </p>
+                <p class="pfont">Shows all the commited history </p>
+		<pre>
+[root@puppetmaster html]# git log
+commit 7792fd73269954cb33c60f865993c34e3ae7151e
+Author: root <root@puppetmaster.us-west-2.compute.internal>
+Date:   Sun Jan 17 22:22:00 2016 -0500
+
+    new file added
+
+		</pre>
+                </div>
+        </div>
+	   <div class="row">
+                <div class="col-lg-6">
+                <p class="bluefont"> git push </p>
+                <p class="pfont">Saves the changes to the central repo </p>
+		<pre>
+[root@puppetmaster hello_world]# git push
+Password: 
+Counting objects: 3, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 281 bytes, done.
+Total 2 (delta 1), reused 0 (delta 0)
+To https://pinglinux0@github.com/pinglinux0/hello_world.git
+   3a4445a..d16471c  master -> master
+[root@puppetmaster hello_world]# 
+
+		</pre>
+                </div>
+                <div class="col-lg-6">
+                <p class="bluefont">git pull </p>
+                <p class="pfont">Pulls the repository into the local machine.Mainly used to update the local repo, when multiple people are working on the same repo.</p>
+		<pre>
+[root@puppetmaster hello_world]# git pull
+Password: 
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/pinglinux0/hello_world
+   d16471c..3be021d  master     -> origin/master
+Updating d16471c..3be021d
+Fast-forward
+ newfiles |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+ create mode 100644 newfiles
+[root@puppetmaster hello_world]# ls
+bikram  index.html  index.php  newfile  newfiles  README.md
+		</pre>
+		<p class="pfont">Here it says 1 files was changed, i.e we added that file manually in github account and it was pulled into the local repo. </p>
+                </div>
+        </div>
+	<h2 style="text-align:center">Roll back commited history back and forth</h2>
+	<hr> </hr>
+	<div class="row">
+              <div class="col-lg-6">
+                  <p class="bluefont"> git revert commit-id</p>
+                  <p class="pfont">Revert back to previous stage temporarily </p>
+		   <pre> git log </pre>
+		  <p class="pfont">Displays all the committed history. To roll back, pick the stage you want to roll back and do git revert commit-id for that particular stage </p>
+	          <pre >git revert 77696af8842c6e890823f843cd9af06ebbbef884 </pre>
+		  <p class="pfont">And to roll back to the head again, since this is temporary roll back, you can do git log and pick the head commit id and roll it back </p>
+
+		</pre>
+
+                </div>
+                <div class="col-lg-6">
+                 <p class="bluefont"> git checkout commit-id </p>
+                 <p class="pfont">You can use git checkout to fetch an old version of single file.</p>
+                <pre >git checkout commit-id filename</pre>
+		<pre> git checkout master </pre>
+		<p class="pfont"> will rollback to the most recent statge </p>
+                </div>
+        </div>
+	<div class="row">
+              <div class="col-lg-6">
+                  <p class="bluefont"> git revert and git checkout</p>
+		   git checkout can be used to checkout branch or specific commit in your local working copy and this will not make any changes to the history where as git revert will add new commit, i.e changes the history.
+		</div>
+	</div>
+	<hr></hr>
+		<h2 style="text-align:center">Branching and Merging</h2>
+	 <div class="row">
+              <div class="col-lg-6">
+                  <p class="bluefont">Branching</p>
+		  <p class="pfont">it is mainly new working directory or staging area.New commits will be saved in the history of current branch </p>
+		  <p class="pfont">List all the branches </p>
+		 <pre> git branch </pre>
+		 <p class="pfont">Creates new branch named branchname</p>
+		  <pre> git checkout -b branchname </pre>
+		 <p class="pfont">Switch branches</p>
+		  <pre> git checkout branchname </pre>
+		 <p class="pfont">Deletes branches</p>
+		  <pre> git branch -d branchname</pre>
+                </div>
+		 <div class="col-lg-6">
+                  <p class="bluefont">Merging</p>
+		  <p class="pfont">Process of putting back the history of new branch to the old master branch </p>
+		  <pre> git merge branchname </pre>
+		  <p class="pfont">Example:</br>
+		  # create new branch</br>
+		  git checkout -b newbranchname</br>
+	    	  </br>
+		  #modifies some file</br>
+		  git add <file></br>
+		  git commit -m "modified file"</br>
+		 </br>
+		  #modifies some file again</br>
+                  git add <file></br>
+                  git commit -m "modified file again"</br>
+		 </br> 
+		 #Merge the branch </br>
+		 git checkout master </br>
+		git merge branchname </br>
+		git branch -d branchname </br>
+		</p>
+                </div>
+        </div> 	
+     <hr></hr>
+		<h2 style="text-align:center">Pushing and pulling from new branch</h2>
+         <div class="row">
+              <div class="col-lg-6">
+		<p class="bluefont">Pushing</p>
+		<p class="pfont">Pushing is process of transfering commits from  local repository to a remote repo </p>
+		<pre>git push branchname </pre>
+<pre>
+[root@puppetmaster hello_world]# git branch
+* master
+  newbranch
+[root@puppetmaster hello_world]# git checkout newbranch
+Switched to branch 'newbranch'
+[root@puppetmaster hello_world]# git push origin newbranch
+Password: 
+Total 0 (delta 0), reused 0 (delta 0)
+To https://pinglinux0@github.com/pinglinux0/hello_world.git
+ * [new branch]      newbranch -> newbranch
+</pre>
+	     </div>
+              <div class="col-lg-6">
+		<p class="bluefont">Pulling</p>
+		<pre>git fetch origin</pre>
+		<p class="pfont">You dont automatically get all the branches, have to do git merge origin </p>
+	     </div>
+	</div>
+		<hr></hr>
+	       <nav>
+                <ul class="pager button active">
+                        <li><a href="git.html"><span aria-hidden="true">&larr;</span>Previous</a></li>
+                     <!--   <li><a href="ppath.html">Next<span aria-hidden="true">&rarr;</span></a></li>-->
+                </ul>
+        </nav>
+
+    </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="introtolinux.html" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

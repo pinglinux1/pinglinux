@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title> Firewall Rules</title>
+
+     <style type="text/css">
+
+    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+        <ul class="nav nav-justified nav-pills" role="tablist" >
+            <li class="active badge"><a href="../index.html">Home</a></li>
+            <!----submenu in the contents ------->
+
+            <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+                        </ul>
+                    </li>
+                <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle" >Devops<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+			<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>
+                        </ul>
+            </li>
+            <li class="active badge"><a href="contact.html">Contact</a></li>
+        </ul>
+</nav>
+      </div>
+     </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="2973793853"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Firewall Rules</h2>
+		
+	   <hr></hr>
+          <p class="text-danger bluefont">What is Firewalls ? </p>
+          <p class="pfont">Firewall is the system design to prevent unathorized access to the networked nodes from incoming and outgoing traffic.It can be implemened in both the form of hardware and software. </p> 
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont"> What is iptables </p>
+	 	<p class="pfont">All the firewall rules for incoming and outgoing traffic are placed in the iptables which is pre installed in the linux OS. </p>
+		<p> Ip tables is setup as a service </p>
+		<pre>service iptables start </pre>
+		<pre>service iptables stop </pre>
+		<pre> service iptables restart </pre>  
+
+	</div>
+	  <div class="col-lg-6">
+	   <p class="bluefont">Location of the iptables</p>
+		<p class="pfont"> /etc/sysconfig/iptables</p>
+		<p> You can also view iptables from command iptables -L.It shows all the rules that has been setup.
+		<pre> # iptables -L</pre>	
+		<pre style="text-align:left;direction:rtl;">
+	 	Chain INPUT (policy ACCEPT)
+		target     prot opt source               destination
+
+		Chain FORWARD (policy ACCEPT)
+		target     prot opt source               destination
+
+		Chain OUTPUT (policy ACCEPT)
+		target     prot opt source               destination
+		</pre>
+		<p> There is no rules setup in the iptables  </p>
+        </div>
+       </div>
+	<div class="row">
+          <div class="col-lg-12">		
+		<table class="table">
+    			<thead>
+      				<tr>
+        				<th>Rules</th>
+        				<th></th>
+        				<th>Purpose</th>
+      					</tr>
+    			</thead>
+    			<tbody>
+      			<tr>
+        			<td>-A</td>
+        			<td></td>
+       				<td>Appends the Rule.Input,Output,and Forward</td>
+      			</tr>
+      			<tr>
+        			<td>--state</td>
+        			<td></td>
+        			<td>NEW - The connection has not yet been seen</br>
+				RELATED - The connection is new, but is related to another connection already permitted </br>
+				ESTABLISHED - The connection is already established.  </td>
+      			</tr>
+      			<tr>
+        			<td>-p</td>
+        			<td>tcp or udp</td>
+        			<td>Protocol used for connection.if you dont specify p, all protocol will be used</td>
+      			</tr>
+			 <tr>    
+                                <td>-dport or -sport </td>
+                                <td></td>
+                                <td> The destination port and source port.it can be single or range of port seperated by comma..if you dont specify ports, all ports will be match</td>
+                        </tr>
+			 <tr>    
+                                <td>-j - Jump to the specified target</td>
+                                <td></td>
+                                <td> Specifies what needs to happen to the incoming packet that matches this rules</br>
+				     ACCEPT - Accept the packet and stop processing rules in this chain.</br>
+				     REJECT - Reject the packet and notify the sender. </br>
+				     DROP - Silently ignore the packet, and stop processing rules in this chain </td>
+
+                        </tr>
+			<tr>
+				<td>-i -incoming interface </td>
+				<td>-o -outgoing interface</td>
+				<td>Interface through which the incoming packets are coming </td>
+
+			<tr>
+			 <tr>    
+                                <td>-I</td>
+                                <td></td>
+                                <td>-I - Inserts a rule</br>
+				 -I INPUT 5 - will insert the rules and make the 5th rule in the list. </td>
+                        </tr>
+			 <tr>    
+                                <td>S</td>
+                                <td></td>
+                                <td>The source IP address or subnet of the traffic, or anywhere</td>
+                        </tr>
+			<tr>    <td>d</td>
+				<td> </td>
+				<td >The destination IP address or subnet of the traffic, or anywhere </td>
+
+
+			</tr>
+			<tr>	
+				<td>iptables -L --linenumbers</td>
+				<td></td>
+				<td>Displays the iptables Rules in line numbers </td>
+			</tr>
+			<tr>
+				<td>iptables -D 5</td>
+				<td></td>
+				<td>Will drop the iptable rule 5</td>
+			</tr>
+    			<tr>
+				<td>iptables -F</td>
+				<td>	</td>
+				<td>Will delete all firewall rules   </td>
+
+
+			</tr>
+			</tbody>
+  		</table>
+	</div>
+    </div>		 
+			<div class="row">
+			<div class="col-lg-6">
+           			<p class="bluefont">Opening ports to incoming connections</p>
+				<p>Allow web server in port 80 </p>
+				<pre># iptables -A TCP -p tcp --dport 80 -j ACCEPT </pre>
+				<p> Allow ssh connection in port 22 </p>
+				<pre># iptables -A TCP -p tcp --dport 22 -j ACCEPT</pre>
+				<p>Block a specific ip address </p>
+				<pre>iptables -A INPUT -i eth0 -s "$BLOCK_THIS_IP" -j DROP</pre>
+				<p> Allow incoming ssh only from specific networks </p>
+				<pre>#iptables -A INPUT -i eth0 -p tcp -s 192.168.1.0/24 --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT </pre>
+				<p>allow incoming ssh connections only from 192.168.1.X network. </p>
+				<p> Allow outgoing ssh </p>
+				<pre>iptables -A OUTPUT -o eth0 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT</pre>
+				<p> Combining multiple ports </p>
+				<pre>iptables -A INPUT -i eth0 -p tcp -m multiport --dports 22,80,443 -m state --state NEW,ESTABLISHED -j ACCEPT</pre>
+				<p> Sometime,we might only allow ssh and block everything else incoming as well as outgoing </p>
+				<pre style="text-align:left;direction:rtl;"> iptables -A INPUT -j DROP #
+				iptables -A OUTPUT -j DROP#</pre>
+				</div>
+			</div>	
+
+     <hr></hr>
+
+    </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="introtolinux.html" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

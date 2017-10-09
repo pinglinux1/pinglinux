@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title> Process Management </title>
+
+     <style type="text/css">
+         
+    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+        <ul class="nav nav-justified nav-pills" role="tablist" >
+            <li class="active badge"><a href="../index.html">Home</a></li>
+            <!----submenu in the contents ------->
+
+            <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+                        </ul>
+                    </li>
+                <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle" >Devops<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+			<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>
+                        </ul>
+            </li>
+            <li class="active badge"><a href="contact.html">Contact</a></li>
+        </ul>
+</nav>
+      </div>
+     </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="2973793853"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Process Management</h2>
+	   <hr></hr>
+          <p class="text-danger bluefont">what is Process ?</p>
+          <p class="pfont">Process is the running instance of the program. It carries out the task  within the Operating System.</p>
+	  </div>
+	<div class="col-lg-5">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- subpages -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="1589838655"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont">State of the process</p>
+	 	<p class="pfont"> Running: The process is running or is getting ready to run. </br> 
+			Waiting: The process is waiting for some event or resources, held by other. </br>
+			Stopped: The process is stopped, has finished the taask </br>
+			Zombie:This is halted process, more likely dead process </br></p>
+	  </div>
+	  <div class="col-lg-6">
+	   <p class="bluefont">Commands to manage the process in linux </br>
+			top, ps , htop, nice, renice</p>
+		</p>
+		
+        </div>
+      </div>
+		
+	<div class="row">
+          <div class="col-lg-8">
+           <p class="bluefont">top</p>
+                <p class="pfont">Top provides an ongoing look at processor activity in real time </p>
+		<pre"> # top </br></pre>
+		<img src="../toppict/top.png" alt=top" style="margin:2%;width:100%;height:80%;">
+              
+        </div>
+	
+	</div>
+	<div class="row">
+	  <div class="col-lg-8">
+           <p class="bluefont">top  </br></p>             
+	       <p class="pfont"> List the Process sorting by  memory utilization</p>
+               <pre> # top </br> shift + m</pre>
+                <img src="../toppict/top2.png" alt=top" style="width:100%;height:100%;">
+	 </div>
+	</div>
+	     <div class="row">
+          <div class="col-lg-8">
+           <p class="bluefont">top  </br></p>
+               <p class="pfont"> List the Process in sorting by cpu  utilization</p>
+               <pre> # top </br> shift + p</pre>
+                <img src="../toppict/topcpu.png" alt=top" style="width:100%;height:100%;">
+         </div>
+        </div>
+	  <div class="row">
+          <div class="col-lg-8">
+           <p class="bluefont">top  </br></p>                
+               <p class="pfont">Sort field via field letter, for example press ‘n‘ letter to sort process by memory. <p>
+               <pre> # top </br> shft + o</pre>
+                <img src="../toppict/top3.png" alt=top" style="width:100%;height:100%;">
+         </div>
+        </div>
+	  <div class="row">
+          <div class="col-lg-8">
+           <p class="bluefont">top  </br></p>                
+               <p class="pfont">List all the process by used by particular user</p> 
+               <pre> # top </br> top -u username</pre>
+                <img src="../toppict/topbyuser.png" alt=top" style="width:100%;height:100%;">
+         </div>
+        </div>
+	  <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont"> top followed by character c </br></p>                
+               <p class="pfont">Displays the absolute path of the process<p>
+               <pre> # top </br> c</pre>
+                <img src="../toppict/topwithoutc.png" alt=top" style="width:100%;height:100%;">
+         	<p> Change After pressing c </p>
+         </div>
+	<div class="col-lg-6">
+           <p class="bluefont">  </br></p>
+               <p class="pfont">Displays the absolute path of the process<p>
+               <pre> # top </br> c</pre>
+ 
+                      <img src="../toppict/topwithc.png" alt=top" style="width:100%;height:100%;">
+         </div>
+
+        </div>
+	
+	  <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">top  </br></p>                
+               <p class="pfont"> Renice a Process</p>
+		<p> Set the priority of the process </p>
+               <pre> # top </br> r </pre>
+                  <img src="../toppict/toprenice.png" alt=top" style="width:100%;height:100%;">
+         </div>
+	   <div class="col-lg-6">
+           <p class="bluefont">top  </br></p>
+               <p class="pfont"> I entered the pid 21770, and it asked me the </br>Renice PID 21770 to value: </p>
+               <pre> Renice PID 21770 to value: </br> 1 </pre>
+                <img src="../toppict/toprenice1.png" alt=top" style="width:100%;height:100%;">
+         	<div> </div>
+		<p class="pfont"> For pid 21770, NI was initially was , and we changed it to 1. </p>
+                <img src="../toppict/toprenice2.png" alt=top" style="width:100%;height:100%;">
+	   </div>
+        </div>
+
+	   <div class="row">
+          <div class="col-lg-8">
+           <p class="bluefont">top  </br></p>
+               <p class="pfont"> Kill a Process</p>
+               <pre> # top </br> k </pre>
+                <img src="../toppict/topkill.png" alt=top" style="width:100%;height:100%;">
+         </div>
+        </div>
+	<div class="row">
+          <div class="col-lg-8">
+           <p class="bluefont"> Exit top command after certain loop </br></p>
+               <p class="pfont"> With below command top command will automatically exit after 5 number of repetition.</p>
+               <pre> # top -n 5</pre>
+         </div>
+        </div>
+	<hr><b></hr>  
+	   <h2><u>htop , Updated version of top.</u> </h2>
+	   <div class="row">
+          <div class="col-lg-8">
+           <p class="bluefont"> Its just the updated version of top command, and more easy to use as well. </br></p>
+                <img src="../toppict/htop.png" alt=top" style="width:100%;height:100%;">
+         </div>
+        </div>
+
+	<hr></hr>
+	<h2> process listing (ps) </h2>
+	<div class="row">
+          <div class="col-lg-6">
+           <p>ps gives you a single snapshot of the process, where as top gives you constant update of the running process,listing by the criteria you select. Another Big difference will be, PS to get more detailed information about a single process/thread, where top is more of a "summary" of what is running and the resources it is using.
+</p>		<pre> ps aux </pre>
+                <img src="../toppict/psaux.png" alt=top" style="width:100%;height:100%;">
+         </div>
+	 <div class="col-lg-6">
+           <p class="bluefont">process listing </p>
+		<pre>ps -ef </pre>
+                <img src="../toppict/psef.png" alt=top" style="width:100%;height:100%;">
+         </div>
+        </div>	
+        <div class="row"> 
+        <div class="col-lg-6">
+		<p>Find out the more detail information of indiviudal process </p>
+		<pre> ps aux | grep http </pre>
+		 <img src="../toppict/psgrep.png" alt=top" style="width:100%;height:100%;">
+
+	</div>
+		  <div class="col-lg-6">
+			<p> Understanding the field </p>
+			<p> user : user related to the process </p>
+			<p> pid : process Id used by each process </p>
+			<p> pri: Priority of the process</p>
+			<p>ni : nice value </p>
+			<p> %cpu :cpu utilized by the process </p>
+			<p>%mem : Memory used by the processs</p>
+			<p> vsz	:virtual memory usage of entire process	</p>
+			<p> rss :real memory usage	</p>
+			<p> tyy: Terminal associated with the process		</p>
+			<p>start: The day the process was started </p>
+			<p>Time : duration the process has ran for </p>
+			
+        	</div>
+	</div>
+	<h2> nice and renice </h2>
+	<div class="row">
+		<div class="col-lg-6">
+			<p class="bluefont"> Nice </p>
+			<p> Nice command in Linux can set process priority. If you give a process a higher priority, then Kernel will allocate more cpu time to that process.Initially all the processs by default, get launched with the priority of 0.</p>
+			<p> Command to find the priority of the process </p>
+			</pre> ps al or can use top command as well.</pre>
+		 <img src="../toppict/processni.png" alt=top" style="width:100%;height:100%;">
+		<pre>[tomuser@mac ~]# nice  </br> 0</pre>
+		<p> nice command without argument checks the priority of the terminal.</p>
+		<p> Process priority values range from -20 to 19, -20 being on the higher rank, and 
+			19 is consider to be low. </p>
+		<pre> nice --10 commandname </pre>
+		<p> First hifen sign is for command, and the other one is for negative value</p>
+		<pre> nice --10 top & </pre>
+		<img src="../toppict/nice10.png" alt=top" style="width:100%;height:100%;">
+		</div>
+		<div class="col-lg-6">
+			<p class="bluefont"> Renice </p>
+			<p> Renice command in Linux changes the priority of running process. </p>
+			<pre> renice -10 -p 3 </pre>
+			<p>This will change the priority of process with pid 3 to -10</p>
+			<img src="../toppict/renice10.png" alt=top" style="width:100%;height:100%;">
+
+			<pre> renice -10 -p 12345 -u ec2-user </pre>
+                        <p>This will change the priority of process with pid 12345 to -10, and all the process asociated with ec2-user.</p>
+			<p>[root@ip-172-31-31-37 ec2-user]# renice -3 -p 4 -u ec2-user 
+			4: old priority 0, new priority -3</br>
+			500: old priority 0, new priority -3 </p>
+			 <img src="../toppict/renice3.png" alt=top" style="width:100%;height:100%;">
+		</div>
+	</div>
+	    <div class="row">
+       		<div class="col-lg-6">
+                        <p class="bluefont"> Running the process in background and foreground </p>
+			<p> will display the process information <?p>
+			<pre> # top   </pre>
+			<p> will run the process in the background, and we will be able to do someother task </p>
+			<pre> # top & </pre>
+			<p> Command to see the jobs running in the background </p>
+			<pre> jobs -l </pre>
+			<p> To bring the job in the foreground </p>
+			<pre>fg %no </pre>
+			<p> To send the job back to the background </p>
+			<pre> bg n </pre>
+			<p class="pfont">We can also use screen application </p>
+		</div>
+		<div class="col-lg-6">
+		<p class="bluefont">Killing the running process </p>
+			<p> Killing the process with the pid </p>
+			<pre>kill PID</pre>
+			<p> Killing the process gracefully </p>
+			<pre>kill -9 PID</pre>
+			<p>killing the process forcefully </p>
+			<pre>kill -15 PID</pre>
+			<p> Killing the process by its name </p>
+			<pre>killall process-Name</pre>
+			<p> Killing the process gracefully by there name </p>
+			<pre>killall -9 process-Namee</pre>
+			<p>killing the process forcefully by processname</p>
+			<pre>killall -15 process-Name</pre>
+			<p>Killing the multiple process at a time</p>
+			<pre>kill  pid1 pid2 pid3 </pre>
+		</div>
+        </div>
+
+      
+
+     <hr></hr>
+
+    </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="introtolinux.html" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

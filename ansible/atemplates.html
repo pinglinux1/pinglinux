@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+
+    <title>Ansible templates </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+          <ul class="nav nav-justified nav-pills" role="tablist">
+	    <li class="active active badge"><a href="../index.html">Home</a></li>
+	    <!----submenu in the contents ------->
+ 
+	    <li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+			    <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+			    <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+			    <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+			    <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+			    <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+			</ul>
+                    </li>
+		<li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Devops<b class="caret"></b></a> 
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+			<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>
+			</ul>
+	    </li>	
+            <li class="active badge"><a href="../contact.html">Contact</a></li>
+	</ul>
+        </nav>
+      </div>
+     </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="2973793853"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Ansible module</h2>
+	   <hr></hr>
+          <p class="text-danger bluefont">What is Templates ?</p>
+          <p class="pfont">Templates are files that combine code, data, and text to produce a final output.it gets its input from users or from any stored resources </p>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont"> Templates Example </p>
+	 	<p class="pfont">This template file will get its value from vars line.</p>
+		<pre>vi index.j2</pre>
+		Hello {{ msg }} # here msg acts as a variable and gets it value from playbook ngix-playbook.yml
+		</div>
+		<div class="col-lg-6">
+	   <p class="bluefont">This will transfer the files into the remote host with the contents hello world.</p>
+	  <p class="pfont">vi nginx-playbook.yml </p>
+	  <pre>
+---
+- hosts: all
+  vars:
+  - msg: world
+
+  tasks:
+  - name: Upload the index.html to the pinglinux/html directory
+    template: src=path/index.j2 dest=/var/www/pinglinux/html/ mode=677
+
+	  </pre>
+       </div>
+      </div>
+	
+
+
+	<nav>
+  		<ul class="pager button active">
+    			<li><a href="aplaybook.html"><span aria-hidden="true">&larr;</span>Previous</a></li>-->
+    			<li><a href="aroles.html">Next<span aria-hidden="true">&rarr;</span></a></li>
+  		</ul>
+	</nav>
+     <hr></hr>
+ </div>
+  </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="#" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

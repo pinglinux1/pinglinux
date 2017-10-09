@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+
+    <title> Puppet </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+          <ul class="nav nav-justified nav-pills" role="tablist">
+	    <li class="active active badge"><a href="../index.html">Home</a></li>
+	    <!----submenu in the contents ------->
+ 
+	    <li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+			    <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+			    <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+			    <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+			    <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+			    <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+			</ul>
+                    </li>
+		<li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Devops<b class="caret"></b></a> 
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+			<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>		
+	
+			</ul>
+	    </li>	
+            <li class="active badge"><a href="../contact.html">Contact</a></li>
+	</ul>
+        </nav>
+      </div>
+     </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="2973793853"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Roles and Profiles </h2>
+	   <hr></hr>
+
+	<img src="../puppetpict/rolesprofile2.png" alt="roleandprofile" style="width:100%;height:100%;">
+	<p class="command">Profiles and Roles are simply modules. You create modules first and add the manifest from modules into the profiles which eventually gets combined into the role </p>
+          <p class="text-danger bluefont">What is  Profiles ?</p>
+          <p class="pfont"> Profiles is a class declarations which also defines class parameters if required and contains minimal logic. This is better way of desiging the classes for reusable purpose. </p>
+	 <pre>class profiles::apache($parameters="value") {
+		include apache
+		include php
+		include phpmyadmin
+	}</pre>  
+
+	</div>
+	</div>
+
+	<div class="row">
+	  <div class="col-lg-6">
+	   <p class="bluefont">What is Roles ? </br></p>
+	   <p class="pfont">Roles are simply collections of Profiles.Roles will call the profiles, which will contain the stack of technology. </br>
+	   <pre>class roles::webserver {
+		include profiles
+		#should contain no logic
+	   }</pre>
+	 <p class="pfont" >This server role is webserver role </p>
+	 <p class="pfont" >There might be another server with mysqlserver role </p>
+	 <pre>class roles::mysqlserver {
+		include profiles  # profiles will have mysql, mysql admin,postgres
+	  }</pre>
+        </div>
+	  <div class="col-lg-6">
+           <p class="bluefont"> Facts: </p>
+	 	<p class="pfont"><ul><li> 
+		 A node can only have one role </li>
+		<li> A role can include as many profiles as required.</li>
+		<li> A profile includes and manages modules.</li>
+		<li>  A modules manage resources </li>
+		<li> If a node requires two roles, it has by definition become new role. </li>
+		</ul>
+		</p>
+	  </div>
+       </div>
+	<hr> <hr>
+	<div class="row">
+		<div class="col-lg-6">
+                <p class="bluefont">Profiles </p>
+		<pre> cd /etc/puppet/modules/ </pre>
+		<pre>puppet modules generate profiles or mkdir profiles/{manifests,files} </pre>
+		<pre> vi /etc/puppet/modules/profiles/manifests/apache.pp </pre>
+		<img src="../puppetpict/profile1.png" alt="profile" style="width:100%;height:100%;">
+		<pre>vi /etc/puppet/modules/profiles/manifests/base.pp </pre>
+		<img src="../puppetpict/profile2.png" alt="profile" style="width:100%;height:100%;">
+		</div>
+		<div class="col-lg-6">
+                <p class="bluefont"> Roles </p>
+		<pre>puppet modules generate roles </pre>
+		<img src="../puppetpict/role1.png" alt="profile" style="width:100%;height:100%;">
+		<pre>vi /etc/puppet/modules/roles/manifest/webserver.pp </pre>
+		<img src="../puppetpict/role2.png" alt="profile" style="width:100%;height:100%;">
+                </div>
+	</div>
+	<hr><hr>
+		<div class="row">
+                <div class="col-lg-6">
+                <p class="bluefont">Use External Node Classifer (ENC) to apply the class to the node, </p>
+		<pre>[root@puppetmaster~]# vi /etc/puppet/manifest/site.pp
+		node 'puppetclient.us-west-2.compute.internal' {
+			include roles::webserver
+
+ 		}</pre>
+		</div>
+		 <div class="col-lg-6">
+                <p class="bluefont">Apply it to the client machine </p>
+		<pre> pupept agent -t </pre> 
+		<p class="command">
+		Info: Applying configuration version '1452052856'</br>
+		Notice: /Stage[main]/Profiles::Apache/Package[httpd]/ensure: created</br>
+		Notice: /Stage[main]/Profiles::Apache/Service[httpd]/ensure: ensure changed 'stopped' to 'running'</br>
+		Info: /Stage[main]/Profiles::Apache/Service[httpd]: Unscheduling refresh on Service[httpd]</br>
+		Notice: Finished catalog run in 6.88 seconds</br>
+
+
+
+		</p>
+		</div>
+		</div>
+		<div class="row">
+			  <div class="col-lg-8">
+                		<p class="bluefont">Many nodes makes mess when you have many classes.To overcome this problem, roles and profiles was introduced </p>
+		        <img src="../puppetpict/rolesprofile1.png" alt="roleandprofile" style="width:100%;height:100%;">
+	<p class="command"> 1) Hera.example.com needs networking and users class.We combine both into
+				one profile named base.it removed the hassle of writing both in external node classifier <br>
+			    2) Similarly, hermes.example.com needs six classes, it will really be mess,when you have many classes, thus you combine all this classes into one profile and include that profile in the role. </br
+			  </p> 
+			 </div>
+		</div>
+	<nav>
+  		<ul class="pager button active">
+    			<li><a href="pmodulespackage.html"><span aria-hidden="true">&larr;</span>Previous</a></li>
+    			<!--<li><a href="#">Next<span aria-hidden="true">&rarr;</span></a></li>-->
+  		</ul>
+	</nav>
+     <hr></hr>
+
+  </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="#" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

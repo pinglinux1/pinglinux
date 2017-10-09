@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+
+    <title> Puppet </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+          <ul class="nav nav-justified nav-pills" role="tablist">
+	    <li class="active active badge"><a href="../index.html">Home</a></li>
+	    <!----submenu in the contents ------->
+ 
+	    <li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+			    <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+			    <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+			    <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+			    <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+			    <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+			</ul>
+                    </li>
+		<li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Devops<b class="caret"></b></a> 
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;">
+				<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>	
+
+		</ul>
+	    </li>	
+            <li class="active badge"><a href="../contact.html">Contact</a></li>
+	</ul>
+        </nav>
+      </div>
+     </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="2973793853"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Puppet module</h2>
+	   <hr></hr>
+          <p class="text-danger bluefont">What is module ? </p>
+          <p class="pfont">A module is a collection of manifests and data (such as facts, files, and templates), and they have a specific directory structure. They are useful for organizing Puppet code, as they allow you to split your code into multiple manifests. </p>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont"> Modules structure </p>
+	 	<p class="pfont">To create a module, you must create a directory (whose name matches your module name) in Puppet's modules directory, and it must contain a directory called manifests, and that directory must contain an init.pp file. The init.pp file must only contain a Puppet class that matches the module name. </p>
+
+	  </div>
+	  <div class="col-lg-6">
+	   <p class="bluefont">Puppet module example </br></p>
+	   <p class="pfont">/etc/puppet/modules/modulesname/manifest/init.pp </br>
+	   </p>
+	  <pre>[root@puppetmaster]# vi init.pp </pre>
+	  <pre>class modulesname {
+		// contents
+
+	  } </pre>
+        </div>
+     </div>
+	<div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont"> Modules Structure </p>
+	   <pre>/etc/puppet/
+		manifest
+		   |---site.pp
+		modules
+		   moduleName
+			manifest
+			  |--init.pp
+		        files
+			  |--myfile.txt
+
+	   </pre>
+	</div>
+	  <div class="col-lg-6">	
+		<p class="pfont">1) A module is a directory.</br>
+		2) The module's name must be the name of the directory.</br>
+		3) It contains a manifests directory, which can contain any number of .pp files.</br>
+		4) The manifests directory should always contain an init.pp file.</br>
+		5) This file must contain a single class definition. The class's name must be the same as the module's name.
+		</p>
+	</div>
+	</div>
+	
+	<div class="row">
+		 <div class="col-lg-6">                                                     
+        		<p class="bluefont"> Modules to transfer the files </p>
+			<pre>[root@puppetmaster~]vi /etc/puppet/modules/transferfiles/manifest/init.pp </pre>
+			<p> Here module name is transferfiles </p>
+			<pre> class transferfiles {
+			file {'/var/www/html/index.html':   
+			file => present,
+			mode => 400, 
+			owner => 'root'
+			group => 'root',
+			source => 'puppet://pupeptserver/modules/transferfiles/index.html',		
+		}	
+			
+			</pre>
+		</div>
+		 <div class="col-lg-6">                                                     
+       			<pre>[root@puppetmaster~]# vi /etc/puppet/modules/transferfiles/files/index.html </pre>
+			<p class="command"> 
+					hello world 
+			</p>
+			<pre>[root@puppetmaster~]vi /etc/puppet/manifest/site.pp </pre>
+			<p class="command">include transferfiles </p>
+			<p></p>
+			<pre[root@puppetclient~] puppet agent -t </pre>
+			
+		</div>
+	</div>
+		<hr><hr>
+		<h2>Modules to install package, start the service and configure the files. </h2>
+	<div class="row">
+	    <p class="bluefont"> Here we are writing four manifests. </p>
+		
+		<div class="col-lg-6">
+		<pre>[root@puppetmaster~]# vi /etc/puppet/modules/httpd/package.pp</pre>
+		<img src="../puppetpict/class3.png" alt="modules" style="width:80%;height:100%;">
+		<pre>vi /etc/puppet/modules/httpd/service.pp</pre>
+		<img src="../puppetpict/class4.png" alt="modules" style="width:80%;height:100%;">
+                <pre>vi /etc/puppet/modules/httpd/config.pp</pre>
+		<img src="../puppetpict/class5.png" alt="modules" style="width:120%;height:100%;">
+                <pre>[root@puppetmaster~]i /etc/puppet/modules/httpd/init.pp</pre>
+		<img src="../puppetpict/class6.png" alt="modules" style="width:100%;height:100%;">
+		<pre>[root@puppetmaster~]# vi /etc/puppet/manifest/site.pp </pre>
+		<pre> include httpd </pre>
+		</div>
+		<div class="col-lg-6">
+		<p class="pfont"> The httpd.conf file is kept in the files directroy inside modules directory httpd.The file will get transfer into the client machine on which httpd service is going to get install. </p>
+		<pre>[root@puppetmaster]# vi /etc/puppet/modules/httpd/files/httpd.conf </pre>	
+		<pre>[root@puppetclient~]# puppet agent -t</pre>
+		<p class="command">
+		Info: Retrieving pluginfacts</br>
+		Info: Retrieving plugin</br>
+		Info: Caching catalog for puppetclient.us-west-2.compute.internal</br>
+		Notice: /Stage[main]/Httpd::Package/Package[httpd]/ensure: created</br>
+		Notice: /Stage[main]/Httpd::Config/File[/etc/httpd/httpd.conf]/ensure: defined content as '{md5}e95f0f4cdc8f8a3de1b5c3884969859b'</br>
+		Notice: /Stage[main]/Httpd::Service/Service[httpd]/ensure: ensure changed 'stopped' to 'running'</br>
+		Info: /Stage[main]/Httpd::Service/Service[httpd]: Unscheduling refresh on Service[httpd]</br>
+		Notice: Finished catalog run in 3.20 seconds
+		</p>
+                </div>
+		</div>
+	<nav>
+  		<ul class="pager button active">
+    			<li><a href="ppath.html"><span aria-hidden="true">&larr;</span>Previous</a></li>
+    			<li><a href="phiera.html">Next<span aria-hidden="true">&rarr;</span></a></li>
+  		</ul>
+	</nav>
+     <hr></hr>
+
+  </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="#" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title> Creating user and group</title>
+
+     <style type="text/css">
+         
+    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<ul class="nav nav-justified nav-pills" role="tablist" >
+            <li class="active badge"><a href="../index.html">Home</a></li>
+            <!----submenu in the contents ------->
+
+            <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+                        </ul>
+                    </li>
+                <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle" >Devops<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                        </ul>
+            </li>
+            <li class="active badge"><a href="contact.html">Contact</a></li>
+        </ul>
+<nav >
+        </nav>
+      </div>
+     </div>
+     
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>File and directory permission.</h2>
+	   <hr></hr>
+          <p class="text-danger bluefont">What is file permission ?</p>
+          <p class="pfont">Permission of the owner to give group and other user the access to the file and directory to read and modify it.Rights can be assigned to read a file, to write a file, and to execute a file (i.e., run the file as a program). </p>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont"> ALL the files and directory in unix system will have the similar structure as shown below.</p>
+	 	<pre style="text-align:left;direction:rtl;">
+		sh-3.2# ls -l
+		total 24
+		-rw-r--r--  2 root  staff  12 Dec 20 16:32 file1
+		drwxr--r--  2 root  staff  12 Dec 20 16:32 directory
+		</pre>
+	  	</div>
+	  <div class="col-lg-6">
+	   <p class="bluefont">Diagram  </br></p>
+		<p class="pfont">
+		         <img src="../virtualpict/permissions_diagram.png" alt="permission" style="width:100%;height:100%;">
+		</p>
+		
+        </div>
+       </div>
+	    <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">Lets dive in details on the structure </p>                
+		<pre style="text-align:left;direction:rtl;">
+                  r = read
+		  w = write
+		  x = execute
+		  u = user
+		  g = group
+		  o = other
+		  First  rwx is for user
+		  Second rwx  is for group
+		  Third  rwx  is for other
+		</pre>
+                </div>
+          <div class="col-lg-6">
+           <p class="bluefont">Understanding the fields  </br></p>
+               <p class ="command" style="padding:2%;">
+		  -rw-r--r--  2 root  staff  12 Dec 20 16:32 file1 </br>
+		  1) It is a file hifen(-) at the beginnig indicates file and d indicates directory.</br>
+		  2) User has read and write permission,and no execute permission</br>
+		  3) Group hasread only permission.</br>
+		  4) Lastly, other has read permission only. No write and execute Permission</br>
+		  5) Owner of the file  is root.</br>
+		  6) It belongs to  staff group</br>
+		  7) File was created on 20th december at 16:32 </br>
+		</p>
+        </div>
+       </div>
+	  <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">Understanding the Numbers </p>
+                <pre style="text-align:left;direction:rtl;">
+		 r = 4, w = 2,x = 1
+		 rwx = 4+2+1 = 7
+		 rw- = 4+2+0 = 6
+		 r-- = 4+0+0 = 4
+                 r-x = 4+0+2 = 5
+               
+		 ... and so on
+                </div>
+          <div class="col-lg-6">
+           <p class="bluefont">Value and meanings of Numbers  </br></p>
+               <pre style="text-align:left;direction:rtl;">
+		rwxrwxrwx = 777  Read, write and execute for all
+		rwxr-xr-x = 755  Nowrite permission for group & other
+		rwx------ = 700  Nothing for group and other
+		rw-rw-rw- = 666
+		rw-r--r-- = 644
+		rw------- = 600
+		... and so on
+                </pre>
+        </div>
+       </div>
+	   <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">chmod </p>
+                <pre style="text-align:left;direction:rtl;">
+		 chmod 777 filename
+		  it will give the read,write and execute permissions to everyone
+                 chmod 700 filename  == chmod u+rwx filename
+                 chmod 770 filename  == chmod ug+rwx filename
+		 chmod 777 filename  == chmod ugo+rwx filename
+                 chmod 651 filename  == chmod u+rw,g+rx,o+x filename
+                </div>
+          <div class="col-lg-6">
+           <p class="bluefont">Revoking the permission back </p>
+               <pre style="text-align:left;direction:rtl;">
+		 chmod u-r fname take reading permission away 
+		 chmod g-rwx fname rake read,write and ececute away
+		 chmod u-w,g-w,o-w
+		 and so on ....
+		</pre>
+        </div> 
+       </div>
+           <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">Changing file ownership </p>
+	   <p> You can change the owner of the file and directory using the command chown.In below example root owns the data file, and we have changed the owner to test. User test was already created. </p>
+                <pre style="text-align:left;direction:rtl;">
+                 [root@ip-172-31-31-37 tmp]# ls -l
+		  total 0
+		  rw-r--r--. 1 root root 0 Dec 22 00:08 data-
+		  root@ip-172-32-32-32 tmp]# chown test data]
+		  root@ip-172-32-32-32 tmp]# ls -l]
+		   total 0
+		   rw-r--r--. 1 test root 0 Dec 22 00:08 data-
+		   root@ip-172-32-32-32 tmp]
+                </div>
+          <div class="col-lg-6">
+           <p class="bluefont"> Changing group ownership </p>
+		<p>Similarly you can change the group of the file and directory using the command chgrp.In below example root is the group which gets changed to the testgroup.
+               <pre style="text-align:left;direction:rtl;">
+                [root@ip-172-32-32-32 tmp]# ls -l
+		total 0
+		rw-r--r--. 1 root root 0 Dec 22 00:45 data-
+		root@ip-172-32-32-32 tmp]# chgrp testgroup data] 
+		root@ip-172-32-32-32 tmp]# ls -l]
+		total 0
+		rw-r--r--. 1 root testgroup 0 Dec 22 00:45 data
+		#root@ip-172-31-31-37 tmp]
+            
+                </pre>
+        </div>
+       </div>
+	<div class ="row">
+	<div class="col-lg-6">
+           <p class="bluefont">Changing directory ownership and group recursively </p>
+		<p> All the files and folder inside certain directory will get to the specified owner and group. if you dont want to perfom recursively, just remove -R from chown command</p>
+                <pre style="text-align:left;direction:rtl;">
+                 root@ip-172-32-32-32 tmp]# ls -l]
+                  total 0
+                  rw-r--r--. 1 root root 0 Dec 22 00:08 data-
+                  root@ip-172-32-32-32 tmp]# chown -R test:testdata data]
+                  root@ip-172-32-32-32 tmp]# ls -l]
+                   total 0
+                   rw-r--r--. 1 test testdata 0 Dec 22 00:08 data-
+                   root@ip-172-32-32-32 tmp]
+                </div>
+        
+       </div>
+
+		<h2> Creating users and group </h2>
+		  <hr></hr>
+	 <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">Users Administration </p>
+                <p class="command">
+                	useradd – Adds a new user account on the local system</br>
+			Lets create newuser named tomuser.</br>
+			id command can be used to check the existing user </br>
+                	eg: </br>
+			<p></p>
+			root@ip-172-32-32-32 ec2-user]# useradd tomuser</br>
+			root@ip-172-32-32-32 ec2-user]# id tomuser</br>
+			uid=502(tomuser) gid=503(tomuser) groups=503(tomuser)</br>
+			root@ip-172-32-32-32 ec2-user#</br>
+			 root@ip-172-32-32-32 ec2-user]# useradd -u 100 -g other -d /export/home/newuser1 -m -s /			   bin/bash -c "Regular User Account" newuser1 </br>
+			<p></p>
+			 
+			creating user with user id 100, group name other, setting the home 
+			directory for new user,Using the bash shell, Putting the comment
+			 and lastly giving the name of the new user newuser1
+			 <p> When you create the new user account and set the password, it gets save in /etc/passwd </p>
+			<pre style="text-align:left;"> vi /etc/passwd 
+			 tomuser:x:502:503::/home/tomuser:/bin/bash</pre>
+		</p>
+	 	</div>
+          <div class="col-lg-6">
+           <p class="bluefont"> Modifying and deleting the user</br></p>
+               <pre style="text-align:left;direction:rtl;">
+		 useradd - Adds a new user account on the system
+                 usermod – Modifies a user’s account on the system
+		 userdel – Deletes a user’s account from the  system
+		 :eg
+                </pre>
+		<pre># usermod -c "i am tomuser" tomuser </pre>
+		<p> # vi /etc/passwd | grep tomuser </br>
+		tomuser:x:502:503:i am tomuser:/home/tomuser:/bin/bash </p>
+		<p> Similarly, we can change userid, groupid, homedirectory </br>
+		usermod -d /tmp/tomuser/ tomuser.</p>
+		<p> # vi /etc/passwd | grep tomuser </br>
+		tomuser:x:502:503:i am tomuser:/tmp/tomuser:/bin/bash</br>
+		Lastly deleteing the user,
+		<pre style="text-align:left;direction:rtl;">root@ip-172-32-32-33 ec2-user]# userdel tomuser]
+		 root@ip-172-32-32-32 ec2-user]# id tomuser]
+		 id: tomuser: No such user
+		</pre>
+		<p> if you go into /home/ directory, you will still see the directory for tomuser.
+		   To remove user with there home directory, use userdel -r </p>
+		 <pre style="text-align:left;direction:rtl;">root@ip-172-32-32-33 ec2-user]# userdel -r tomuser]
+                 root@ip-172-32-32-32 ec2-user]# id tomuser]
+                 id: tomuser: No such user
+		 root@ip-172-32-32-32 ec2-user]# cd /home/ ; ls]
+                </pre>
+		
+        </div>
+       </div>
+	   <div class="row">
+	     <div class="col-lg-6">
+          	<p class="bluefont"> Creating, modifying and deleting the group</p>
+               	<pre style="text-align:left;direction:rtl;">
+		  groupadd – Adds a new group entry to the system
+		  groupmod – Modifies a group entry on the system
+		  groupdel – Deletes a group entry from the system
+		  :eg</pre>
+		<p class ="command"> 
+			[root@ip-172-32-32-32 ec2-user]# useradd mathgroup </br>
+			[root@ip-172-32-32-32 ec2-user]# cat /etc/group | grep mathgroup </br>
+			mathgroup:x:503: </br>
+[			root@ip-172-32-32-32 ec2-user]# </br>
+		</p>
+			<br><u>Group information gets saved in /etc/group/</u></br>
+			 <p> This are the field of group</br>
+			   groupname:group-password:GID:username-list<br>
+			  eg:</br> 
+			  historygroup:x:2003:tomuser,bobuser</p>
+			<p>You can specify group id while creating the group </p>	  
+		<p class="command">	[root@ip-172-32-32-32 ec2-user]# groupadd -g 1002 sciencegroup</br>
+			[root@ip-172-32-32-32 ec2-user]# cat /etc/group | grep science </br>
+                        sciencegroup:x:1002: </br>
+[                       root@ip-172-32-32-32 ec2-user]# </br></p>
+		<p>    Changing the group id  </p>
+		<p class="command"> [root@ip-172-32-32-32 ec2-user]# groupmod -g 2003 sciencegroup </br>
+		    [root@ip-172-32-32-32 ec2-user]# cat /etc/group | grep sciencegroup</br>
+		    sciencegroup:x:2003:</br> 
+		</p>
+		<p> Changing the name of the group </p>
+		  <p class="command"> [root@ip-172-32-32-32 ec2-user]# groupmod -n sciencegroup englishgroup </br>
+                    [root@ip-172-32-32-32 ec2-user]# cat /etc/group | grep englishgroup</br>
+                    englishgroup:x:2003:</br>
+                </p>
+		  <p> Giving the non unique values, which is done using -o with -g  </p>
+		  <p class="command"> [root@ip-172-32-32-32 ec2-user]# groupmod -g 2003 -o histroygroup </br>
+                    historygroup:x:2003:</br>
+                </p>
+		 <p>Deleteing the Group </p> 
+                  <p class="command"> [root@ip-172-32-32-32 ec2-user]# groupdel  histroygroup </br>
+                </p>
+		   </div>
+		   <div class="col-lg-6">
+                         <p class="bluefont"> su (supper user)</br></p>
+                         <p> it is used to change the user account.You are logged into as someuser and wants to sqitch to different user or get the access to root user.</p>
+			<pre style="text-align:left;direction:rtl;">
+			root@ip-172-31-31-37 home]# su tomuser]
+			tomuser@ip-172-31-31-37 home]$ su root]
+			Password:
+			#[root@ip-172-31-31-37 home]
+                        </pre>
+			<p>root user doesnt require password to get into others user accounts.However,  user beside root requires password to get into the  accounts that doesnt belong to the owner. </p>
+			<p><p class="bluefont"> sudo </br></p>
+			<p> Not everyuser has permission to perform all the action on the servers.And, its not secure to share the root password to every user as well. Thus, sudo come in action. With the help of sudo, you can run the single command with root privileges. it doesnt switch to the root user or require a seperate root user passowrd, however su doesnt require root password. </p>
+			<p> Main difference between <b>sudo</b> and <b>su</b> is that <b> sudo </b> sudo uses "your password" to authenticate, whereas su uses "Their password", the account you are switching to. Also, when you do sudo, it is noted down into the log files as well.</p>
+                        <p>lets have some example </p>
+			<p class="command">
+		 		[tomuser@ip-172-32-32-32 home]$ sudo yum install httpdi</br>
+				[sudo] password for tomuser: </br>
+			 	tomuser is not in the sudoers file.  This incident will be reported.</br>
+			</p>
+			<p>I tried to install the httpd application with the sudo permission, but it denied me, reason my username hasn't been added in the /etc/sudoers file. In order for one to have the sudo access, there username has to present in the sudoers file. AS a root user, you can open it as visudo </p>
+		    <p> The incident is reported in the log file. vi /var/log/secure </p>
+		     <p> Lets solve the problem. Add the entry at the very bottom of the file. <p>
+		     <p class="command">vi /etc/sudoers</br> 
+			## Read drop-in files from /etc/sudoers.d (the # here does not mean a comment)
+			#includedir /etc/sudoers.d</br>
+			cloud-user      ALL=(ALL)       NOPASSWD: ALL</br>
+			ec2-user        ALL=(ALL)       NOPASSWD: ALL</br>
+		       </p>
+			  <p class="command">vi /etc/sudoers</br>
+                        ## Read drop-in files from /etc/sudoers.d (the # here does not mean a comment)
+                        #includedir /etc/sudoers.d</br>
+                        cloud-user      ALL=(ALL)       NOPASSWD: ALL</br>
+                        ec2-user        ALL=(ALL)       NOPASSWD: ALL</br>
+                        tomuser         ALL=(ALL)       NOPASSWD: ALL</br>
+                       </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<p class="bluefont"> Setting up the root password and Various options</br></p>
+				<p> Setting up the password for accounts </p>			
+					[ec2-user@ip-172-32-32-32 ~]$ sudo su - </br>
+					[root@ip-172-32-32-32 ~]# passwd root  </br>
+					Changing password for user root.      </br>
+					New password: 				</br>
+					Retype new password: 			</br>
+					passwd: all authentication tokens updated successfully.</br>
+					[root@ip-172-32-32-32 ~]#		</br>
+				<p>
+				<p> You have to either be root or use sudo to create an account and set the password </p>
+				<p class="command"> chage command </p>
+				<p> All the option gets saved in the /etc/shadows file </p>
+				<p>{userName}:{password}:{lastpasswdchanged}:{Minimum_days}:{Maximum_days}:{Warn}:{Inactive}:{Expire}:</p>
+				<p class="command">  [root@ip-172-32-32-32 ~]# chage -l bobuser </br>
+				Last password change					: Dec 23, 2015</br>
+				Password expires					: never</br>
+				Password inactive					: never</br>
+				Account expires						: never</br>
+				Minimum number of days between password change		: 0</br>
+				Maximum number of days between password change		: 99999</br>
+				Number of days of warning before password expires	: 7   </p>
+				<p>Minimum days to wait inorder to change the password </br>chage -n date username </p>
+				 <p> Set the expiration date of the account </br> chage -E date username </p>
+				 <p class="command">  [root@ip-172-32-32-32 ~]# chage -E 12/25/2015 bobuser </br>				  Account expires                                         : 12/25/2015</br></p>
+
+				<p>Set the minimum wait date before you can change the passowrd </br>chage -m date username </p>
+                                 <p class="command">  [root@ip-172-32-32-32 ~]# chage -m 5 bobuser </br>                                 Minimum number of days between password chage            : 5</br></p>
+				
+				<p>Set the date for password to be expired </br>chage -M date username </p>
+                                 <p class="command">  [root@ip-172-32-32-32 ~]# chage -M 10 bobuser </br>                                 Maximum number od days between password change                            : 10</br></p>
+			
+				<p>Warning before the password expires </br>chage -W days username </p>                                 <p class="command">  [root@ip-172-32-32-32 ~]# chage -W 10 bobuser </br>                                		Number od days of warning before password expires: 10 </p> 
+			
+				<p>Set the date for password to be expired</br>chage -d date/days username </p>                                 <p class="command">  [root@ip-172-32-32-32 ~]# chage -d 10 bobuser </br>                                 password expires                            : 12/10/2015</br></p>	
+			
+				<p>Forced the password to get change on next login </br>chage -d 0  username </p>                                 <p class="command">  [root@ip-172-32-32-32 ~]# chage -d 0 bobuser </br>                                    Las password change                        : Password have to be changed</br></p>
+				<p> Locking and unlocking the account temporarily </p>
+				<p class="command">
+					[bobuser@ip-172-31-31-37 root]$ sudo passwd -l bobuser</br>
+					Locking password for user bobuser.</br>
+					passwd: Success</br>
+					[bobuser@ip-172-31-31-37 root]$ sudo passwd -u bobuser</br>
+					Unlocking password for user bobuser.</br>
+					passwd: Success</br>
+					[bobuser@ip-172-31-31-37 root]$ </br>
+					</p>
+			</div>
+			<div class="col-lg-6">
+				<p class="bluefont"> Generating the key</br></p>
+				<p>Generte the key in your local machine, and place it on the server. This will solve the hassle of entering the password to login to the server everytime. </p>
+			<p class="command">
+				[root@localhost] home]# su tomuser</br>
+				[tomuser@localhost home]$ ssh-keygen</br>
+				Generating public/private rsa key pair.</br>
+				Enter file in which to save the key (/home/tomuser/.ssh/id_rsa): </br>
+				Created directory '/home/tomuser/.ssh'.</br>
+				Enter passphrase (empty for no passphrase): </br>
+				Enter same passphrase again: </br>
+				Your identification has been saved in /home/tomuser/.ssh/id_rsa.</br>
+				Your public key has been saved in /home/tomuser/.ssh/id_rsa.pub.</br>
+				The key fingerprint is:</br>
+				30:11:5d:fe:12:59:3b:bf:b0:21:a5:be:a8:0b:f1:c4 tomuser@localhost</br>
+				<pre>The key's randomart image is:
+				+--[ RSA 2048]----+
+				|      oo .. .    |
+				|       ... o .   |
+				|      o   + +    |
+				|     . o   = o   |
+				|    . E S + + .  |
+				|     +   . o + . |
+				|    . .   . . .  |
+				|     .   . .     |
+				|      oo. .      |
+				+-----------------+</pre></p>
+				</p> The generated key gets saved into the /home/tomuser/.ssh/id_rsa.pub</p>
+<pre>[tomuser@localhost home]$ cat /home/tomuser/.ssh/id_rsa.pub </br>
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAzoFUvjzCx3A/yCG+zbn4dSTufGSuR5NYBxzIC49/4llBIakzptMkqEi2E719lWm2WZOEo+XGWb
+ntS3AOWm28m+wc16zUl84kl6nqp/qTrHrXiqNpuZs9g0Q9nVm7E8939mJxLSNEbl6YejleCc0lQKZqVbAX0deXEZIaGkU1Y8arYhANQdOYMJ61+iV3cUtXaDmqZ5AVscMURZE82+9pLa6ltNISxf4qHsgZwS6vhQztNRkHbq5dbiTyyfD5nzD0+JuXiPG+XvcDbLuRSW6NT6B03AwPAeJYtGZrKpt99OmC4QRN0/T3NtiSAuvPFsCzLrDHeRyYZIDUHQv8Cgnw== tomuser@localhost
+				</pre>
+				<p> Once the key is generated in the localmachine, copy the key and login into the server</br> 1) create an account bobuser</br> 2) Get into the directory /home/bobuser/.ssh/, create one if its not there.</br> 3) Open the text file named authorized_keys paste the copiedkey from your localmachine.</br> 4)log out from the server and log back in ssh bobuser@ipaddressofsever, it should allow you to get in without asking to enter the password </p>
+   				<pre>
+[root@ip-172-32-32-32 home]# adduser bobuser
+[root@ip-172-32-32-32 home]# mkdir /home/bobuser/.ssh/
+[root@ip-172-32-32-32 home]# vi /home/bobuser/.ssh/authorized_keys
+[root@ip-172-32-32-32 home]# cat /home/bobuser/.ssh/authorized_keys 
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAzoFUvjzCx3A/yCG+zbn4dSTufGSuR5NYBxzIC49/4llBIakzptMkqEi2E719lWm2WZOEo+XGWbR4ntS3AOWm28m+wc16zUl84kl6nqp/qTrHrXiqNpuZs9g0Q9nVm7E8939mJxLSNEbl6YejleCc0lQKZqVbAX0deXEZIaGkU1Y8arYhANQdOYMJ61+iV3cUtXaDmqZ5AVscMURZE82+9pLa6ltNISxf4qHsgZwS6vhQztNRkHbq5dbiTyyfD5nzD0+JuXiPG+XvcDbLuRSW6NT6B03AwPAeJYtGZrKpt99OmC4QRN0/T3NtiSAuvPFsCzLrDHeRyYZIDUHQv8Cgnw== localhost@localdomain
+				</pre>
+				
+			</div>
+		</div>	
+		
+     <hr></hr>
+
+    </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="introtolinux.html" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

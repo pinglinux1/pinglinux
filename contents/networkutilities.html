@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title> Network Management</title>
+
+     <style type="text/css">
+         
+    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+		<ul class="nav nav-justified nav-pills" role="tablist" >
+            <li class="active badge"><a href="../index.html">Home</a></li>
+            <!----submenu in the contents ------->
+
+            <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+                        </ul>
+                    </li>
+                <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle" >Devops<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+				<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>
+                        </ul>
+            </li>
+            <li class="active badge"><a href="contact.html">Contact</a></li>
+        </ul>
+
+        </nav>
+
+      </div>
+     </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="2973793853"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Network Management</h2>
+	   <hr></hr>
+          <p class="text-danger bluefont">What is network management ?</p>
+          <p class="pfont">Configuration and keeping network devices and connections up and active.  </p>
+	  </div>
+	</div>
+
+	<hr> </hr>
+	<h2> ping </h2>
+	<p class="pfont"> Ping is used to check, if the host is reachable.To be more precise,test the connectivity between two nodes.Ping uses ICMP (Internet Control Message Protocol) to communicate to other devices. </p>
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont"> Ping hostname </p>
+	 	<p class="pfont">
+		        Ping by default waits for 1 second before sending the next packet </p>
+                	<pre> ping google.com </pre>
+                	<img src="../networkpict/ping1.png" alt="ping" style="width:100%;height:100%;">
+		
+	  </div>
+	  <div class="col-lg-6">
+	   <p class="bluefont">ping -i 3 hostname</p>
+		<p class="pfont">
+			Increase the Wait time for 3 seconds before sending the next packet.
+		</p>
+			
+			<pre> ping -i 3 google.com </pre>
+			<img src="../networkpict/ping2.png" alt="ping2" style="width:100%;height:100%;">
+		
+        </div>
+	</div>
+
+	<div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont"> Ping -c 5 hostname </p>
+                <p class="pfont">
+			  Exit the ping command automatially after certain second. </p>
+                	<pre> ping google.com </pre>
+                	<img src="../networkpict/ping3.png" alt="ping" style="width:100%;height:100%;">
+                
+          </div>
+          <div class="col-lg-6">
+           <p class="bluefont">ping -a hostname</p>
+                <p class="pfont">
+                	 Sends you a audible beep sound when host is reachable so </p>
+                	<pre> ping -a google.com</pre>
+                	<img src="../networkpict/ping4.png" style="width:100%;height:100%;">
+
+        </div>
+      </div>
+	<hr></hr>	
+	<h2> netstat </h2>
+	<hr> </hr>
+	<p>Command that displays network connections for the TCP and UDP (incoming as well as outgoing connection), routing tables, and a number of network interface and network protocol statistic </p>
+	<p> TCP : Transmission control protocol,it is a connection oriented protocol. it follows order while sending the messages and is more secure</p>
+
+	<p> UDP: User Data gram Protocol, is a connection less protocol. it doesnt follow the order, and is less secure. it is fast comparission to tcp</p>     
+
+	 <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont"> netstat -a or netstat -all</p>
+                <p class="pfont">
+                          Displays all the connections(TCP and UDP) </p>
+                        <pre> netstat -a </pre>
+                        <img src="../networkpict/netstat1.png" alt="netstat" style="width:100%;height:100%;">
+
+          </div>
+          <div class="col-lg-6">
+           <p class="bluefont">netstat -tcp or netstat -at</p>
+                <p class="pfont">
+                         Displays all the tcp connection only </p>
+                        <pre> netstat -u</pre>
+                        <img src="../networkpict/netstat2.png" alt="netstat"  style="width:100%;height:100%;">
+
+        </div>
+      </div>
+
+	      <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">netstat --udp or netstat -au</p>
+                <p class="pfont">
+                          Displays all the udp connection. </p>
+                        <pre> netstat -u </pre>
+                        <img src="../networkpict/netstat3.png" alt="netstat" style="width:100%;height:100%;">
+
+          </div>
+          <div class="col-lg-6">
+           <p class="bluefont">netstat -l</p>
+                <p class="pfont">
+                         Displays only listing ports.-lt will display only listing tcp ports, and -lu displays only listing udp ports </p>
+                        <pre> netstat -l </pre>
+			<pre> netstat -lt </pre>
+			<pre> netstat -lu  </pre> 
+                        <img src="../networkpict/netstat4.png" style="width:100%;height:100%;">
+
+        </div>
+      </div>
+		<div class="row">
+			<div class="col-lg-6">
+           			<p class="bluefont">Find out which process is taking particular port and vice versa</p>
+				<pre>netstat -anp | grep ssh </br> netstat -anp | grep ':80' </pre> 
+			 <img src="../networkpict/netstat6.png" style="width:100%;height:100%;">
+
+		</div>
+		</div>
+
+       	<hr></hr>
+	<h2 style="text-align:center"> ifconfig</h2>
+	<hr></hr>
+	<p>It is used to manage, configure and query network interfaces. </p>
+        <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont"> ifconfig -a</p>
+             <p class="pfont"> It is used to display all the network interfaces.</p>
+			<img src="../networkpict/ifconfig1.png" style="width:100%;height:100%;">
+          </div>
+          <div class="col-lg-6">
+           <p class="bluefont">ifconfig eth0</p>
+                <p class="pfont">Display the details of specific network interface </p>
+
+			 <img src="../networkpict/ifconfig2.png" style="width:100%;height:100%;">
+
+        </div>
+        </div>
+	<div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont"> ifconfig eth0 up or down </p>   
+             <p class="pfont">Enable or disable the network interfaces.</p>
+	
+			 <img src="../networkpict/ifconfig4.png" style="width:100%;height:100%;">
+          </div>
+          <div class="col-lg-6">
+           <p class="bluefont">ifconfig eth0 ipaddress</p>
+                <p class="pfont">Assigning the ipaddress to the network interface, similary can assign the netmask and broadcast to network interface.</p>
+			<pre>$ ifconfig eth0 192.168.1.89</br> Got changed from 50 to 89 </pre>
+			 <img src="../networkpict/ifconfig3.png" style="width:100%;height:100%;">
+                
+
+        </div>
+	</div>
+		<hr> </hr>
+		<h2>telent </h2>
+		<p>Telnet is a network protocol which is used to communicate with remote host and to test if port is listening on a system</p>
+		<hr></hr>
+	        
+	<div class="row">
+          <div class="col-lg-6">
+             <p class="bluefont">telnet ipaddress or hostname</p>
+             <p class="pfont"> it is used to connect to the remote host from your node.Mainly used to test the conneciton between two host.By default telent tries to connect on port 23</p>
+			 <img src="../networkpict/telnet1.png" style="width:100%;height:100%;">
+          </div>
+          <div class="col-lg-6">
+           <p class="bluefont">telnet ipaddress port</p>
+                <p class="pfont">It is used to check if the particular port is open in the host for communication.</p>
+		 <img src="../networkpict/telnet2.png" style="width:100%;height:100%;">
+        </div>
+        </div>
+  
+	
+	 	<hr> </hr>
+                <h2>traceroute </h2>
+		<p>Traceroute tracks the route packets taken from an IP network on their way to a given host </p>
+                <hr></hr>
+
+	<div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont"> traceroute ipaddress/servername</p>
+                <p class="pfont">Finds the path from my machine the google.com</p>
+
+		 <img src="../networkpict/traceroute1.png" style="width:100%;height:100%;">
+          </div>
+          <div class="col-lg-6">
+           <p class="bluefont">traceroute google.com -w .1</p>
+                <p class="pfont">Configure Response Wait Time. Wait here is 0.1 second</p>
+		 <img src="../networkpict/traceroute2.png" style="width:100%;height:100%;">
+
+        </div>
+	</div>
+	<hr></hr>
+                <h2> nslookup </h2>
+		<p> Name server lookup is used to find out the named domain
+         <hr></hr>
+	<div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">nslookup hostname</p> 
+               <p class="pfont">Gives the address of the system's Domain Name Server</p>
+		 <img src="../networkpict/nslookup1.png" style="width:100%;height:100%;">
+          </div>
+          <div class="col-lg-6">
+           <p class="bluefont">nslookup ipaddress </p>
+                <p class="pfont"> Reverse DNS Lookups.</p>
+		 <img src="../networkpict/nslookup2.png" style="width:100%;height:100%;">
+                
+
+        </div>
+	</div>
+	 <hr></hr>
+		<h2> hostname </h2>
+		<p> Its the name of the machine. </p>
+	 <hr></hr>
+	    <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">hostname </p>
+               <p class="pfont"> Will give the name of the server</p>
+		<p class="command"> [root@sensu]# hostname </br>
+		  sensumachine
+		</p>
+          </div>
+          <div class="col-lg-6">
+           <p class="bluefont">hostname newname
+                <p class="pfont"> Changes the hostname to the new name.</p>
+		<p class="command">	
+		[root@sensu]# hostname newhostnme</br>
+		[root@sensu]# hostname</br>
+		newhostnme</br>
+		[root@ip-172-31-31-37 sensu]#  </p>
+        </div>
+	
+
+      </div>
+	<div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">Change the hostname permanently </p>
+               <p class="pfont">vi /etc/networks</p>
+                </p>    
+		<img src="../networkpict/hostname.png" style="width:100%;height:100%;">
+          </div>
+
+
+      </div>
+	<hr></hr>
+	 <h2>host</h2>
+	 <p>it is used to perform dns lookup, ipaddress and viceversa, validate ns , mx names and a records </p>
+	</h2>
+	  <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">host hostname</p>
+               <p class="pfont">Provides ipaddress information</p>
+                </p>    
+                <img src="../networkpict/host1.png" style="width:100%;height:100%;">
+          </div>
+	  <div class="col-lg-6">
+           <p class="bluefont">host ipaddress</p>
+               <p class="pfont">Provides hostname information</p>
+                </p>
+                <img src="../networkpict/host2.png" style="width:100%;height:100%;">
+          </div>
+          
+
+      </div>     
+
+
+
+	<hr></hr>
+
+    </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="introtolinux.html" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+
+    <title> Puppet </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+          <ul class="nav nav-justified nav-pills" role="tablist">
+	    <li class="active active badge"><a href="../index.html">Home</a></li>
+	    <!----submenu in the contents ------->
+ 
+	    <li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+                            <li class="divider"></li>
+			    <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+                            <li class="divider"></li>
+			    <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+                            <li class="divider"></li>
+			    <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+                            <li class="divider"></li>
+			    <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+                            <li class="divider"></li>
+			    <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+			</ul>
+                    </li>
+		<li class="dropdown active badge col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Devops<b class="caret"></b></a> 
+			<ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+		<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>	
+			</ul>
+	    </li>	
+            <li class="active badge"><a href="../contact.html">Contact</a></li>
+	</ul>
+        </nav>
+      </div>
+     </div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Puppet </h2>
+	   <hr></hr>
+          <p class="text-danger bluefont">What is puppet ?</p>
+          <p class="pfont">Puppet is the automation tool which makes configuration  easy to  perform  in multiple survers without logging into each of them.i.e we work in the master node to implement the task in the client node.It was written in Ruby and uses Declarative Domain Specific Language </p>
+	  </div>
+	<div class="col-lg-5">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- subpages -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="1589838655"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+	</div>
+
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont"> Puppet master and Puppet agent </p>
+	 	<p class="pfont">Puppet master controls all the puppet node.The manifest, modules and classes are written  in the master node and client node pulls it from master in every 30 min by default. We can run the command to make it implement instantly  as well rather waiting for 30 mins. </p> 
+	  </div>
+	  <div class="col-lg-6">
+	   <p class="bluefont">Important Terms in Puppet </br></p>
+	   <p class="pfont">Manifest: </br>
+		Modules:  </br>
+		Classes:  </br>
+		Hiera Data:</br>
+		Facter:</p>
+        </div>
+     </div>
+		<h2> Installation Process </h2>
+		<hr> </hr>
+	<div class="row">
+		 <div class="col-lg-6">
+           		<p class="bluefont"> Installation of Puppet master  </p>
+			<p>Enable the Puppet Labs Package Repository. You can follow the steps from puppet officail website as well.<a href=" https://docs.puppetlabs.com/puppet/3.8/reference/install_el.html">Download puppet </a></p>
+			<pre>$ sudo rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm </pre>
+			<p> Download puppet </p>
+			<pre> yum install puppet-server facter -y</pre>
+			<pre> service puppetmaster start </pre>
+			<p> Open the following ports(8140,22,8141) which helps client to communicate with the master </p>
+			<pre>iptables -I INPUT -p tcp -m tcp --dport 8140 -j ACCEPT </pre>
+			<pre>iptables -I INPUT -p tcp -m tcp --dport 8141 -j ACCEPT </pre>
+			<pre> iptables -I INPUT -p tcp -m tcp --dport 822 -j ACCEPT</pre>
+			<p> Now save and restart the iptables </p>
+			<pre> # service iptables save </pre>
+			<pre> # service iptables restart </pre>
+			</p> Configuring the hostname </p>
+			<pre> vi /etc/sysconfig/network </pre>
+			<p class="command" > 
+			NETWORKING=yes</br>
+			HOSTNAME=master.pinglinux.com </p>
+			<p> The changes will take effect after you reboot the machine </p>
+			<p> Configuring the agent and master name in the hosts file <p>
+			<pre> vi /etc/hosts</pre>
+			<p class="command"> 127.0.0.1 master.example.com localhost ... </br>
+			puppetagentip agent.example.com </p>
+			<p>Check weather puppet agent is reachable from master with the hostname </p>
+			<pre># ping agent.example.com </pre>
+			<p> You should see the output </br>
+			     64 bytes from agent.example.com (ip_of_client): icmp_seq=1 ttl=64 time=1.50 ms</p>
+			<p> Make sure puppet master is running </p>
+			<pre># service puppetmaster status</pre> 
+			<pre> puppet (pid 12345) is running....</pre>
+			
+		 </div>
+	  <div class="col-lg-6">
+                        <p class="bluefont"> Installation of Puppet client </p>
+			 <p>Enable the Puppet Labs Package Repository. You can follow the steps from puppet officail website as well.<a href=" https://docs.puppetlabs.com/puppet/3.8/reference/install_el.html">Download puppet </a></p>
+                        <pre>$ sudo rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-el-6.noarch.rpm </pre>
+                        <p> Download puppet </p>
+                        <pre> yum install puppet facter -y</pre>
+                        <pre> service puppet start </pre>
+			</p> Configuring the hostname </p>
+                        <pre> vi /etc/sysconfig/network </pre>
+                        <p class="command" >
+                        NETWORKING=yes</br>
+                        HOSTNAME=client.pinglinux.com </p>
+                        <p> The changes will take effect after you reboot the machine </p>
+                        <p> Configuring the agent and master name in the hosts file <p>
+                        <pre> vi /etc/hosts</pre>
+                        <p class="command"> 127.0.0.1 client.pinglinux.com localhost ... </br>
+                        puppet_server_ip server.pinglinux.com </p>
+                        <p>Check weather puppet server is reachable from client with the hostname </p>
+                        <pre># ping server.example.com </pre>
+                        <p> You should see the output </br>
+                             64 bytes from agent.example.com (ip_of_server): icmp_seq=1 ttl=64 time=1.50 ms</p>
+                        <p> Make sure puppet is running </p>
+                        <pre># service puppet status</pre> 
+                        <pre> puppet (pid 12345) is running....</pre>
+			<p> Add the following line under [main] section. 
+			</pre>server = master.pinglinux.com</pre>
+
+
+          </div>
+	</div>
+		
+		<div class="row">
+                 <div class="col-lg-6">
+                        <p class="bluefont"> Configuring our first agent </p>
+                        <p>Puppet client connection to the puppet master(master.pinglinux.com </p>
+			
+			<pre>client#  puppet agent --test --server=master.pinglinux.com --waitforcert=100 </pre>
+			<p>Info: Creating a new SSL certificate request for master.pinglinux.com</br>
+			Info: Certificate Request fingerprint (SHA256): 6F:0D:41:14:BD:2D:FC:CE:1C:DC:11:1E:26:07			:4C:08:D0:C7:E8:62:A5:33:E3:4B:8B:C6:28:C5:C8:88:1C:C8</br>
+			Exiting; no certificate found and waitforcert is disabled </p>
+			<p> it has request the master for the approval of the connection. Login to the master and accept the connection. <p>
+			<pre>[master~] # puppet cert list </pre>
+			<p> Will show the the certificate waiting to be signed </p>
+			<p> "client.pinglinux.com"(SHA256) 6F:0D:41:14:BD:2D:FC:CE:1C:DC:11:1E:28:07:4C:08:D0:C7:E8:62:A3:33:E3:4B:8B:C6:29:C5:C8:88:1C:C9 </p>
+                 	<pre>[master~]#  puppet cert sign client.pinglinux.com </pre>
+                 	<pre>[master~]#  puppet cert sign --all </pre>
+			<preNotice: Signed certificate request for node1.pro-puppet.com
+			Notice: Removing file Puppet::SSL::CertificateRequest node1.pro-puppet.com at
+			'/var/lib/puppet/ssl/ca/requests/node1.pro-puppet.com.pem'  </pre>
+			<p> Now after master signing the certificate , you will see the follwing output on the client machine</p>
+			<pre>[ client~] # puppet agent --test </pre>
+			<p>Info: Retrieving plugin </br>
+				Info: Caching catalog for node1.pro-puppet.com</br>
+				Info: Applying configuration version '1365655737'</br>
+				Notice: Finished catalog run in 0.13 seconds </p>
+			</div>
+          <div class="col-lg-6">
+                        <p class="bluefont"> configuration in the Real Servers </p>
+			<p>Client</p>
+			<img src="../puppetpict/puppet1.png" alt="puppet" style="height:100%;width:100%;">
+			<p>Server <p>
+			<img src="../puppetpict/puppet2.png" alt="puppet" style="height:100%;width:100%;">
+			<p>Client </p>
+			<img src="../puppetpict/puppet3.png" alt="puppet" style="height:100%;width:100%;">
+			<p> </p>
+			<p><b> Certification Error</b> </p>
+			<pre>Stop puppetmaster and puppet in server and client machine.
+			Perform following steps.
+			</pre>
+			<pre>[master]# puppet cert clean --all
+[client]# rm -rf /var/lib/puppet/ssl/*
+			</pre>
+			<pre>master# service puppetmaster start 
+client# service puppet start 
+			</pre>
+			<p> It will regenerate the new certificates </p>
+          </div>
+        </div>
+
+	<p class="bluefont"> Configuration of puppet master and agent in AWS servers(ec2).<a href="aws.html">Link here</a> </p>
+
+
+	<nav>
+  		<ul class="pager button active">
+    			<li><a href="#"><span aria-hidden="true">&larr;</span>Previous</a></li>
+    			<li><a href="pmanifest.html">Next<span aria-hidden="true">&rarr;</span></a></li>
+  		</ul>
+	</nav>
+     <hr></hr>
+  </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="../contents/introtolinux.html" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="its about linux and devops tools">
+    <meta name="author" content="Bikram Bhandari">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>File transfer to the host machine</title>
+
+     <style type="text/css">
+         
+    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	</nav>
+	<ul class="nav nav-justified nav-pills" role="tablist" >
+            <li class="active badge"><a href="../index.html">Home</a></li>
+            <!----submenu in the contents ------->
+
+            <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+                        </ul>
+                    </li>
+                <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle" >Devops<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+			<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>
+                        </ul>
+            </li>
+            <li class="active badge"><a href="contact.html">Contact</a></li>
+        </ul>
+
+        </nav>
+      </div>
+     </div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="2973793853"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>     
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Sharing Files</h2>
+	   <hr></hr>
+          <p class="text-danger bluefont">what is file transfer?</p>
+          <p class="pfont"> File transfer is the process of copying file(s) between servers in secure way. </p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-lg-6">
+           <p class="bluefont"> Methods of tranfering the files </p>
+	 	<p class="pfont">Mainly, we will discuss the four common ways of doing it.<p>
+		<ul style="font-size:150%;">
+		<li>Scp (secure copy) </li>
+		<li> NFS ( Network file system) </li>
+		<li> FTP  (File transfer Protocol)</li>
+		<li>Firezilla </li>
+		</ul>
+	  </div>
+	</div>
+	<hr> </hr>
+		<h2>Secure Copy(SCP) </h2>
+	<hr></hr>
+	<div class="row">
+	  <div class="col-lg-6">
+	   <p class="bluefont">Scp</br></p>
+		<p class="pfont">Sends the file to server </p>
+		<pre>scp file1.txt tomuser@192.182.151.1 </pre>
+		<p class="command">ping-MacBook-Air:local $ scp file1.txt tomuser@52.1.3.40:/var/tmp <br>
+		tomuser@52.32.3.41's password: </br>
+		file1.txt                                                  100%    0     0.0KB/s   00:00 </br>   
+		ping-MacBook-Air:test $ </p>
+	    </div>
+	  <div class="col-lg-6">
+           <p class="bluefont"> Scp user@ipaddress:hostpath localpath</p>
+                <p class="pfont">Pull file from the server.In the given example file1 is pulled from server to the Desktop of localmachine.</p>
+                <pre>scp tomuser@ipaddres:/var/tmp/file1.txt ~/Desktop</pre>
+		<p class="command">
+		ping-MacBook-Air:test $ scp tomuser@52.32.3.41:/var/tmp/file1.txt ~/Desktop/test </br>
+		tomuser@52.32.3.41's password: </br>
+		file1.txt                                                  100%    0     0.0KB/s   00:00 </br>   
+		ping-MacBook-Air:test $ ls </br>
+		file1.txt </br>
+		bikrams-MacBook-Air:test $ </br> 
+		</p>
+                
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">Scp -C</br></p>
+                <p class="pfont">Sends the file compressing the file only in network.It is the faster process. </p>
+                <pre>scp -C file1.txt tomuser@192.182.151.1 </pre>
+            </div>
+          <div class="col-lg-6">
+           <p class="bluefont"> Scp -p 2222 </p>
+                <p class="pfont">Sends the file specifying the ports</p>
+                <pre>scp -p 2222 tomuser@ipaddres:/var/tmp </pre>
+                
+          </div>
+      </div>
+	
+	<hr> </hr>
+                <h2>Network File System(NFS) </h2>
+        <hr></hr>
+        <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">Lets install and setup NFS on server </br></p>
+                <p class="pfont"> </p>
+                <p class="command">yum install nfs* -y </br> 
+		cd /etc/init.d/ </br>
+		./rpcbind start </br>
+		./nfs start </br>
+		mkdir /tomdirectory</br>
+		vi /etc/exports </br>
+		/tomdirectory 192.168.1.40(rw,sync)  --> Here ip is the client ipaddress, and tomdirectpry is just the file system.</br>
+		## if you want to share the directory to more then 1 node, /tomdirectory *(rw,sync)</br> 
+		## rw : the file system is writable,client can read and write the shared files. </br>
+		## ro : the file system is exported read-only.Client can only read the file </br>
+		##sync : reply clients after data have been stored to stable storage; this is the default
+		exportfs -a </br>
+		/etc/init.d/nfs restart</br>
+		Allow the port on iptables
+		rpcinfo -p | grep nfs
+		</p> 
+         
+            </div>
+          <div class="col-lg-6">
+           <p class="bluefont"> Lets configure the settings on the client node.</br></p>
+                <p class="pfont"> </p>
+			<p class="command">yum install nfs* </br>
+			cd /etc/init.d/ </br>
+			./rpcbind start </br>
+			./nfs start </br>
+			mkdir /bobdirectory</br>
+			showmont -e <ip of the server> # Will show the shared server directory.</br>
+			mount 192.168.1.45:/tomdirectory /bobdirectory # mounts the server directory with client directory, and the server shares file in this directoy.</br>
+			vi /etc/fstab # To make the the nfs permanent, add the entry here </br>
+                </p>
+          </div>
+      </div>
+	<hr> </hr>
+                <h2>NFS firewall issue</h2>
+        <hr></hr>
+        <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">You might run into firewall issue. stop the firewall rules in server. </br></p>
+                <p class="pfont">clnt_create: RPC: Port mapper failure - Unable to receive: errno 113 (No route to host)             </p> 
+		<pre> service iptables stop </pre>   
+            </div>
+          <div class="col-lg-6">
+           <p class="bluefont"> Allow the firewalls and ports, if you want NFS to make work with firewalls</p>
+                <p class="pfont">
+		<p class="command">grep LOCKD_UDPPORT /etc/sysconfig/nfs</br>
+		grep LOCKD_TCPPORT /etc/sysconfig/nfs</br>			 
+		grep MOUNTED_PORT /etc/sysconfig/nfs	</p>
+		<p class="command">Uncommnet this line and allow the prots 32803,32769,and 892 in /etc/sysconfig/nfs
+                </p>
+		<p class="command">vi /etc/sysconfig/iptables </p>
+		<p class="command">
+		-A INPUT -m state --state NEW -p tcp -m multiport --dport 111,892,2049,32803  -j ACCEPT</br>
+		-A INPUT -m state --state NEW -p udp -m multiport --dport 111,892,2049,32769  -j ACCEPT
+		</p>
+		<p class="command">service iptables restart;service nfs restart</p>
+          </div>
+      </div>
+	      <hr> </hr>
+                <h2>NFS sharing files </h2>
+        <hr></hr>
+        <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont"> Server</p>
+		<img src="../filetransferpict/nfs1.png" alt="nfs" style="width:100%;height:100%;">   
+            </div>
+          <div class="col-lg-6">
+           <p class="bluefont"> client</p>
+		<img src="../filetransferpict/nfs2.png" alt="nfs" style="width:100%;height:100%;">   
+         	<p> On Server </p>
+		<pre>[root@client /]# cd /tomdirectory 
+		[root@client /]# touch file1.txt file2.txt </pre>
+		<p> This two file would be visible in client machine</br> On Client </p>
+		<pre>[root@client2 /]# cd /bobdirectory 
+		[root@client2 /]# ls 
+		file1.txt file2.txt
+		[root@client2 /]# </pre>
+		
+		<p> Mounted file system is temporary, it gets erased after you reboot the machine </p>
+		<p>To make it permanent, add the entry in /etc/fstab </p>
+		<p class="command">/tomdirectory          /bobdirectory           nfs       defaults       0 0 </p>   
+		<p class="command">chkconfig --levels 235 nfs on </p>
+	</div>
+      </div>
+
+	<hr> </hr>
+                <h2>FTP File Transfer Protocol </h2>
+        <hr></hr>
+        <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont"> Install and configure ftp on server</p>
+                <p class="pfont">1)install ftp with yum command</p>
+		<pre># yum install vsftpd ftp -y </pre>
+		<p class="pfont">2)configuring the settings</p>
+                <pre># vi /etc/vsftpd/vsfptd.conf </pre>
+		<p class="command">anonymous_enable=NO  </br> Uncomment </br ascii_upload_enable=YES
+</br>ascii_download_enable=YES </br>ftpd_banner=Welcome to ping linux FTP service.
+</p> <p class="command"> Add to the bottom of the file </p>
+		</pre> use_localtime=YES </pre>
+		<p> Automatically start vsftpd on every reboot: </p>
+		<pre># service vsftpd start </pre>
+		<pre># chkconfig vsftpd on </pre>
+		<p> Selinux restricts the user to log in to ftp server </p>
+		<pre> # setsebool -P ftp_home_dir on </pre>
+		<p> Allow the port 21 for ftp </p>
+		<pre> -A INPUT -m state --state NEW -m tcp -p tcp --dport 21 -j ACCEPT </pre>
+		<pre> Service iptables restart </pre>
+		<p> Sharing files can be kept on /var/ftp/pub/ </p>
+		<pre>touch file.txt file2.txt </pre>
+	
+            </div>
+          <div class="col-lg-6">
+           <p class="bluefont">Now we can access those files from browser </br></p>
+                <p class="pfont">In browser, enter the ftp://ipaddressofserver </p>
+		<pre>ftp://192.168.1.40 </pre>
+		<img src="../filetransferpict/ftp.png" alt="ftp" style="width:100%;height:120%;">
+                <p>To login to the browser using username and passowrd,make the following changes on the server </p> 
+		<pre>anonymous-enable=NO in /etc/vsftpd/vsftpd.conf  </pre>
+		<pre> # useradd name </pre>
+		<pre> # passwd name   </pre>
+		
+		<img src="../filetransferpict/ftp2.png" alt="ftp" style="width:100%;height:120%;">
+          </div>
+      </div>
+
+
+
+	
+	<hr> </hr>
+                <h2>Firezilla </h2>
+		<p> Firezilla is the GUI tool to transfer files back and forth.You can download it from firezilla site </p>
+        <hr></hr>
+        <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">Provide the hostname, username and password to get connected to the server </br></p>
+                <p class="pfont"></p>  
+		 
+		<img src="../filetransferpict/firezilla1.png" alt="ftp" style="width:100%;height:120%;">
+            </div>
+          <div class="col-lg-6">
+	  <p class="bluefont">Authencating with the credentials </p> 
+                <p class="pfont"> </p>
+		<img src="../filetransferpict/firezilla2.png" alt="ftp" style="width:100%;height:120%;">
+          </div>
+      </div>
+	   <div class="row">
+          <div class="col-lg-6">
+           <p class="bluefont">Firezilla directory structure </br></p>
+                <p class="pfont"> On the left hand side, its the local machine directory, and on the righ hand site, its the remote server directory. You can drag and drop the files between two servers directory.</p>
+
+                <img src="../filetransferpict/firezilla3.png" alt="ftp" style="width:100%;height:120%;">
+            </div>
+          <div class="col-lg-6">
+           <p class="bluefont">You can connect to multiple server at the same time, by opening new tab on the same firezilla </br></p>
+                <p class="pfont"> </p>
+                <img src="../filetransferpict/firezilla4.png" alt="ftp" style="width:100%;height:120%;">
+          </div>
+      </div>
+
+
+     <hr></hr>
+
+    </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="introtolinux.html" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
