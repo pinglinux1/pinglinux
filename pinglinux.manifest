@@ -16,19 +16,19 @@ ansible/atemplates.html
 ansible/newtemplete.html
 
 #Linux contents
-contents/compressedfiles.html
-contents/contact.html
-contents/filemanagement.html
-contents/filepermissions.html
-contents/filestransfer.html
-contents/firewall.html
-contents/introtolinux.html
-contents/networkutilities.html
-contents/newtemplete.html
-contents/packageinstall.html
-contents/processmanagement.html
-contents/textediting.html
-contents/virtualbox.html
+#contents/compressedfiles.html
+#contents/contact.html
+#contents/filemanagement.html
+#contents/filepermissions.html
+#contents/filestransfer.html
+#contents/firewall.html
+#contents/introtolinux.html
+#contents/networkutilities.html
+#contents/newtemplete.html
+#contents/packageinstall.html
+#contents/processmanagement.html
+#contents/textediting.html
+#contents/virtualbox.html
 
 #Devops Contents
 devops/aws.html
