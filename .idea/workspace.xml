@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d39f311e-1e91-4b34-abd4-d7aa549c98b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/amodule.html" afterPath="$PROJECT_DIR$/ansible/amodule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/ansible.html" afterPath="$PROJECT_DIR$/ansible/ansible.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/aplaybook.html" afterPath="$PROJECT_DIR$/ansible/aplaybook.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/aroles.html" afterPath="$PROJECT_DIR$/ansible/aroles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/atemplates.html" afterPath="$PROJECT_DIR$/ansible/atemplates.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/newtemplete.html" afterPath="$PROJECT_DIR$/ansible/newtemplete.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/compressedfiles.html" afterPath="$PROJECT_DIR$/contents/compressedfiles.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/filemanagement.html" afterPath="$PROJECT_DIR$/contents/filemanagement.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/filepermissions.html" afterPath="$PROJECT_DIR$/contents/filepermissions.html" />
@@ -20,25 +14,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/processmanagement.html" afterPath="$PROJECT_DIR$/contents/processmanagement.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/textediting.html" afterPath="$PROJECT_DIR$/contents/textediting.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/virtualbox.html" afterPath="$PROJECT_DIR$/contents/virtualbox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/aws.html" afterPath="$PROJECT_DIR$/devops/aws.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/newtemplete.html" afterPath="$PROJECT_DIR$/devops/newtemplete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pclass.html" afterPath="$PROJECT_DIR$/devops/pclass.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/phiera.html" afterPath="$PROJECT_DIR$/devops/phiera.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pmanifest.html" afterPath="$PROJECT_DIR$/devops/pmanifest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pmodules.html" afterPath="$PROJECT_DIR$/devops/pmodules.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pmodulespackage.html" afterPath="$PROJECT_DIR$/devops/pmodulespackage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pmodulestemplate.html" afterPath="$PROJECT_DIR$/devops/pmodulestemplate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pmoremanifest.html" afterPath="$PROJECT_DIR$/devops/pmoremanifest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pnode.html" afterPath="$PROJECT_DIR$/devops/pnode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/ppath.html" afterPath="$PROJECT_DIR$/devops/ppath.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/puppet.html" afterPath="$PROJECT_DIR$/devops/puppet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/rolesandprofiles.html" afterPath="$PROJECT_DIR$/devops/rolesandprofiles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/git/git.html" afterPath="$PROJECT_DIR$/git/git.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/git/gitcommand.html" afterPath="$PROJECT_DIR$/git/gitcommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/git/newtemplete.html" afterPath="$PROJECT_DIR$/git/newtemplete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/underCons.html" afterPath="$PROJECT_DIR$/python/underCons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/newtemplete.html" afterPath="$PROJECT_DIR$/vagrant/newtemplete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/vagrant.html" afterPath="$PROJECT_DIR$/vagrant/vagrant.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,23 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="underCons.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/underCons.html">
+      <file leaf-file-name="filepermissions.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contents/filepermissions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newtemplete.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vagrant/newtemplete.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="111" column="146" lean-forward="false" selection-start-line="111" selection-start-column="146" selection-end-line="111" selection-end-column="146" />
+            <state relative-caret-position="550">
+              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -73,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vagrant.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vagrant/vagrant.html">
+      <file leaf-file-name="filestransfer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contents/filestransfer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="125" column="144" lean-forward="false" selection-start-line="125" selection-start-column="144" selection-end-line="125" selection-end-column="144" />
+            <state relative-caret-position="366">
+              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -85,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pnode.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/pnode.html">
+      <file leaf-file-name="firewall.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contents/firewall.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="98" column="141" lean-forward="false" selection-start-line="98" selection-start-column="141" selection-end-line="98" selection-end-column="141" />
+            <state relative-caret-position="542">
+              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -97,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ppath.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/ppath.html">
+      <file leaf-file-name="introtolinux.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contents/introtolinux.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="97" column="141" lean-forward="false" selection-start-line="97" selection-start-column="141" selection-end-line="97" selection-end-column="141" />
+            <state relative-caret-position="281">
+              <caret line="53" column="50" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -109,47 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="puppet.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/puppet.html">
+      <file leaf-file-name="networkutilities.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contents/networkutilities.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="95" column="142" lean-forward="false" selection-start-line="95" selection-start-column="142" selection-end-line="95" selection-end-column="142" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rolesandprofiles.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devops/rolesandprofiles.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="98" column="152" lean-forward="false" selection-start-line="98" selection-start-column="152" selection-end-line="98" selection-end-column="152" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="git.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git/git.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="124" column="136" lean-forward="false" selection-start-line="124" selection-start-column="136" selection-end-line="124" selection-end-column="136" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gitcommand.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git/gitcommand.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="122" column="143" lean-forward="false" selection-start-line="122" selection-start-column="143" selection-end-line="122" selection-end-column="143" />
+            <state relative-caret-position="397">
+              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -158,10 +85,58 @@
         </entry>
       </file>
       <file leaf-file-name="newtemplete.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/git/newtemplete.html">
+        <entry file="file://$PROJECT_DIR$/contents/newtemplete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="116" column="144" lean-forward="false" selection-start-line="116" selection-start-column="144" selection-end-line="116" selection-end-column="144" />
+            <state relative-caret-position="274">
+              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="packageinstall.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contents/packageinstall.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="processmanagement.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contents/processmanagement.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="textediting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contents/textediting.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="virtualbox.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/contents/virtualbox.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -201,18 +176,6 @@
         <option value="$PROJECT_DIR$/ansible/aroles.html" />
         <option value="$PROJECT_DIR$/ansible/atemplates.html" />
         <option value="$PROJECT_DIR$/ansible/newtemplete.html" />
-        <option value="$PROJECT_DIR$/contents/compressedfiles.html" />
-        <option value="$PROJECT_DIR$/contents/filemanagement.html" />
-        <option value="$PROJECT_DIR$/contents/filepermissions.html" />
-        <option value="$PROJECT_DIR$/contents/filestransfer.html" />
-        <option value="$PROJECT_DIR$/contents/firewall.html" />
-        <option value="$PROJECT_DIR$/contents/introtolinux.html" />
-        <option value="$PROJECT_DIR$/contents/networkutilities.html" />
-        <option value="$PROJECT_DIR$/contents/newtemplete.html" />
-        <option value="$PROJECT_DIR$/contents/packageinstall.html" />
-        <option value="$PROJECT_DIR$/contents/processmanagement.html" />
-        <option value="$PROJECT_DIR$/contents/textediting.html" />
-        <option value="$PROJECT_DIR$/contents/virtualbox.html" />
         <option value="$PROJECT_DIR$/devops/aws.html" />
         <option value="$PROJECT_DIR$/devops/newtemplete.html" />
         <option value="$PROJECT_DIR$/devops/pclass.html" />
@@ -231,6 +194,18 @@
         <option value="$PROJECT_DIR$/git/newtemplete.html" />
         <option value="$PROJECT_DIR$/vagrant/newtemplete.html" />
         <option value="$PROJECT_DIR$/vagrant/vagrant.html" />
+        <option value="$PROJECT_DIR$/contents/compressedfiles.html" />
+        <option value="$PROJECT_DIR$/contents/filemanagement.html" />
+        <option value="$PROJECT_DIR$/contents/filepermissions.html" />
+        <option value="$PROJECT_DIR$/contents/filestransfer.html" />
+        <option value="$PROJECT_DIR$/contents/firewall.html" />
+        <option value="$PROJECT_DIR$/contents/introtolinux.html" />
+        <option value="$PROJECT_DIR$/contents/networkutilities.html" />
+        <option value="$PROJECT_DIR$/contents/newtemplete.html" />
+        <option value="$PROJECT_DIR$/contents/packageinstall.html" />
+        <option value="$PROJECT_DIR$/contents/processmanagement.html" />
+        <option value="$PROJECT_DIR$/contents/textediting.html" />
+        <option value="$PROJECT_DIR$/contents/virtualbox.html" />
       </list>
     </option>
   </component>
@@ -371,11 +346,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/networkpict/host2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/networkpict/host1.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -459,17 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ansible/amodule.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -524,136 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1470">
           <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/compressedfiles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1319">
-          <caret line="110" column="153" lean-forward="false" selection-start-line="110" selection-start-column="153" selection-end-line="110" selection-end-column="153" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/filemanagement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="101" column="152" lean-forward="false" selection-start-line="101" selection-start-column="152" selection-end-line="101" selection-end-column="152" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/filepermissions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="99" column="71" lean-forward="true" selection-start-line="99" selection-start-column="71" selection-end-line="99" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/filestransfer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="110" column="150" lean-forward="false" selection-start-line="110" selection-start-column="150" selection-end-line="110" selection-end-column="150" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/firewall.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="110" column="16" lean-forward="true" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/introtolinux.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="113" column="150" lean-forward="false" selection-start-line="113" selection-start-column="150" selection-end-line="113" selection-end-column="150" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/networkutilities.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="112" column="154" lean-forward="false" selection-start-line="112" selection-start-column="154" selection-end-line="112" selection-end-column="154" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/newtemplete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="96" column="149" lean-forward="false" selection-start-line="96" selection-start-column="149" selection-end-line="96" selection-end-column="149" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/packageinstall.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="110" column="152" lean-forward="false" selection-start-line="110" selection-start-column="152" selection-end-line="110" selection-end-column="152" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/processmanagement.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="110" column="155" lean-forward="false" selection-start-line="110" selection-start-column="155" selection-end-line="110" selection-end-column="155" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/textediting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="110" column="150" lean-forward="false" selection-start-line="110" selection-start-column="150" selection-end-line="110" selection-end-column="150" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contents/virtualbox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="111" column="148" lean-forward="false" selection-start-line="111" selection-start-column="148" selection-end-line="111" selection-end-column="148" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devops/aws.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="91" column="139" lean-forward="false" selection-start-line="91" selection-start-column="139" selection-end-line="91" selection-end-column="139" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -834,6 +663,155 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="125" column="144" lean-forward="false" selection-start-line="125" selection-start-column="144" selection-end-line="125" selection-end-column="144" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/aws.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="40" column="50" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="40" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/compressedfiles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="44" column="2" lean-forward="false" selection-start-line="44" selection-start-column="2" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/filemanagement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/filepermissions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/filestransfer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/firewall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/introtolinux.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="53" column="50" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/networkutilities.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/newtemplete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/packageinstall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/processmanagement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/textediting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/virtualbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
