@@ -5,7 +5,7 @@ CACHE MANIFEST
 CACHE:
 
 #Main Page is defined to cache and redirect here in html tag.
-#fallback.html # this page shows when data cannot load while offline
+fallback.html # this page shows when data cannot load while offline
 
 # Ansible pages
 ansible/amodule.html
