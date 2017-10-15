@@ -37,7 +37,16 @@
   <![endif]--> 
  </head>
 
-  <body style="background-color: #1b6d85">
+  <body>
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="container">
 
@@ -95,6 +104,8 @@
       <div class="row">
         <div class="col-lg-7">
           <h2>Ansible</h2>
+			<!-- Display fb button here -->
+                      <div style="display: block;text-align: right;" class="fb-share-button" data-href="http://www.pinglinux.com/ansible/ansible.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.pinglinux.com%2F&amp;src=sdkpreparse">Share</a></div>
 	   <hr></hr>
           <p class="text-danger bluefont">What is Ansible ?</p>
           <p class="pfont">Ansible is the automation platform for configuring, manageing and deploying  the system.It manages nodes over SSH or PowerShell.it manages many servers from single machine i.e ansible is installed in only master server.. </p>

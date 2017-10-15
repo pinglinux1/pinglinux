@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d39f311e-1e91-4b34-abd4-d7aa549c98b9" name="Default" comment="" />
+    <list default="true" id="d39f311e-1e91-4b34-abd4-d7aa549c98b9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/amodule.html" afterPath="$PROJECT_DIR$/ansible/amodule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/ansible.html" afterPath="$PROJECT_DIR$/ansible/ansible.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/aplaybook.html" afterPath="$PROJECT_DIR$/ansible/aplaybook.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/aroles.html" afterPath="$PROJECT_DIR$/ansible/aroles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/atemplates.html" afterPath="$PROJECT_DIR$/ansible/atemplates.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/newtemplete.html" afterPath="$PROJECT_DIR$/ansible/newtemplete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/compressedfiles.html" afterPath="$PROJECT_DIR$/contents/compressedfiles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/filemanagement.html" afterPath="$PROJECT_DIR$/contents/filemanagement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/filepermissions.html" afterPath="$PROJECT_DIR$/contents/filepermissions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/filestransfer.html" afterPath="$PROJECT_DIR$/contents/filestransfer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/firewall.html" afterPath="$PROJECT_DIR$/contents/firewall.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/introtolinux.html" afterPath="$PROJECT_DIR$/contents/introtolinux.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/networkutilities.html" afterPath="$PROJECT_DIR$/contents/networkutilities.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/newtemplete.html" afterPath="$PROJECT_DIR$/contents/newtemplete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/packageinstall.html" afterPath="$PROJECT_DIR$/contents/packageinstall.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/processmanagement.html" afterPath="$PROJECT_DIR$/contents/processmanagement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/textediting.html" afterPath="$PROJECT_DIR$/contents/textediting.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/virtualbox.html" afterPath="$PROJECT_DIR$/contents/virtualbox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/aws.html" afterPath="$PROJECT_DIR$/devops/aws.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/newtemplete.html" afterPath="$PROJECT_DIR$/devops/newtemplete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pclass.html" afterPath="$PROJECT_DIR$/devops/pclass.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/phiera.html" afterPath="$PROJECT_DIR$/devops/phiera.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pmanifest.html" afterPath="$PROJECT_DIR$/devops/pmanifest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pmodules.html" afterPath="$PROJECT_DIR$/devops/pmodules.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pmodulespackage.html" afterPath="$PROJECT_DIR$/devops/pmodulespackage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pmodulestemplate.html" afterPath="$PROJECT_DIR$/devops/pmodulestemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pmoremanifest.html" afterPath="$PROJECT_DIR$/devops/pmoremanifest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/pnode.html" afterPath="$PROJECT_DIR$/devops/pnode.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/ppath.html" afterPath="$PROJECT_DIR$/devops/ppath.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/puppet.html" afterPath="$PROJECT_DIR$/devops/puppet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devops/rolesandprofiles.html" afterPath="$PROJECT_DIR$/devops/rolesandprofiles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/git/git.html" afterPath="$PROJECT_DIR$/git/git.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/git/gitcommand.html" afterPath="$PROJECT_DIR$/git/gitcommand.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/git/newtemplete.html" afterPath="$PROJECT_DIR$/git/newtemplete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/underCons.html" afterPath="$PROJECT_DIR$/python/underCons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/newtemplete.html" afterPath="$PROJECT_DIR$/vagrant/newtemplete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vagrant/vagrant.html" afterPath="$PROJECT_DIR$/vagrant/vagrant.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,44 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1304">
-              <caret line="96" column="45" lean-forward="false" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1508022390000" expanded="false" signature="5725:5769" ph="..." />
-                <marker date="1508022390000" expanded="false" signature="6043:6064" ph="..." />
-                <marker date="1508022390000" expanded="false" signature="6232:6276" ph="..." />
-                <marker date="1508022390000" expanded="false" signature="6979:6986" ph="»" />
-                <marker date="1508022390000" expanded="false" signature="7365:7372" ph="»" />
-                <marker date="1508022390000" expanded="false" signature="7783:7790" ph="»" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ansible.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ansible/ansible.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="underCons.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/underCons.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+            <state relative-caret-position="508">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -56,72 +61,110 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="justified-nav.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/justified-nav.css">
+      <file leaf-file-name="newtemplete.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vagrant/newtemplete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="301">
+              <caret line="111" column="146" lean-forward="false" selection-start-line="111" selection-start-column="146" selection-end-line="111" selection-end-column="146" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test1.html">
+      <file leaf-file-name="vagrant.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vagrant/vagrant.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="398">
+              <caret line="125" column="144" lean-forward="false" selection-start-line="125" selection-start-column="144" selection-end-line="125" selection-end-column="144" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <file leaf-file-name="pnode.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/devops/pnode.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="231">
+              <caret line="98" column="141" lean-forward="false" selection-start-line="98" selection-start-column="141" selection-end-line="98" selection-end-column="141" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-theme.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap-theme.css">
+      <file leaf-file-name="ppath.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/devops/ppath.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="399">
+              <caret line="97" column="141" lean-forward="false" selection-start-line="97" selection-start-column="141" selection-end-line="97" selection-end-column="141" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css.min" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap.css.min">
+      <file leaf-file-name="puppet.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/devops/puppet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="202">
+              <caret line="95" column="142" lean-forward="false" selection-start-line="95" selection-start-column="142" selection-end-line="95" selection-end-column="142" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="command.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/command.css">
+      <file leaf-file-name="rolesandprofiles.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/devops/rolesandprofiles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="383">
+              <caret line="98" column="152" lean-forward="false" selection-start-line="98" selection-start-column="152" selection-end-line="98" selection-end-column="152" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/home.css">
+      <file leaf-file-name="git.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/git/git.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="448">
+              <caret line="124" column="136" lean-forward="false" selection-start-line="124" selection-start-column="136" selection-end-line="124" selection-end-column="136" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gitcommand.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/git/gitcommand.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="122" column="143" lean-forward="false" selection-start-line="122" selection-start-column="143" selection-end-line="122" selection-end-column="143" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newtemplete.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/git/newtemplete.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="116" column="144" lean-forward="false" selection-start-line="116" selection-start-column="144" selection-end-line="116" selection-end-column="144" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,6 +181,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ping</find>
+      <find>Ansible</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,9 +193,44 @@
         <option value="$PROJECT_DIR$/css/home.css" />
         <option value="$PROJECT_DIR$/test1.html" />
         <option value="$PROJECT_DIR$/underCons.html" />
-        <option value="$PROJECT_DIR$/ansible/ansible.html" />
-        <option value="$PROJECT_DIR$/python/underCons.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/python/underCons.html" />
+        <option value="$PROJECT_DIR$/ansible/amodule.html" />
+        <option value="$PROJECT_DIR$/ansible/ansible.html" />
+        <option value="$PROJECT_DIR$/ansible/aplaybook.html" />
+        <option value="$PROJECT_DIR$/ansible/aroles.html" />
+        <option value="$PROJECT_DIR$/ansible/atemplates.html" />
+        <option value="$PROJECT_DIR$/ansible/newtemplete.html" />
+        <option value="$PROJECT_DIR$/contents/compressedfiles.html" />
+        <option value="$PROJECT_DIR$/contents/filemanagement.html" />
+        <option value="$PROJECT_DIR$/contents/filepermissions.html" />
+        <option value="$PROJECT_DIR$/contents/filestransfer.html" />
+        <option value="$PROJECT_DIR$/contents/firewall.html" />
+        <option value="$PROJECT_DIR$/contents/introtolinux.html" />
+        <option value="$PROJECT_DIR$/contents/networkutilities.html" />
+        <option value="$PROJECT_DIR$/contents/newtemplete.html" />
+        <option value="$PROJECT_DIR$/contents/packageinstall.html" />
+        <option value="$PROJECT_DIR$/contents/processmanagement.html" />
+        <option value="$PROJECT_DIR$/contents/textediting.html" />
+        <option value="$PROJECT_DIR$/contents/virtualbox.html" />
+        <option value="$PROJECT_DIR$/devops/aws.html" />
+        <option value="$PROJECT_DIR$/devops/newtemplete.html" />
+        <option value="$PROJECT_DIR$/devops/pclass.html" />
+        <option value="$PROJECT_DIR$/devops/phiera.html" />
+        <option value="$PROJECT_DIR$/devops/pmanifest.html" />
+        <option value="$PROJECT_DIR$/devops/pmodules.html" />
+        <option value="$PROJECT_DIR$/devops/pmodulespackage.html" />
+        <option value="$PROJECT_DIR$/devops/pmodulestemplate.html" />
+        <option value="$PROJECT_DIR$/devops/pmoremanifest.html" />
+        <option value="$PROJECT_DIR$/devops/pnode.html" />
+        <option value="$PROJECT_DIR$/devops/ppath.html" />
+        <option value="$PROJECT_DIR$/devops/puppet.html" />
+        <option value="$PROJECT_DIR$/devops/rolesandprofiles.html" />
+        <option value="$PROJECT_DIR$/git/git.html" />
+        <option value="$PROJECT_DIR$/git/gitcommand.html" />
+        <option value="$PROJECT_DIR$/git/newtemplete.html" />
+        <option value="$PROJECT_DIR$/vagrant/newtemplete.html" />
+        <option value="$PROJECT_DIR$/vagrant/vagrant.html" />
       </list>
     </option>
   </component>
@@ -182,6 +261,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,14 +272,37 @@
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="ansible" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="contents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="devops" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="git" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="vagrant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,7 +339,7 @@
     <frame x="0" y="26" width="1280" height="725" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25767368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26171243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -268,172 +371,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1508022390000" expanded="false" signature="5725:5769" ph="..." />
-            <marker date="1508022390000" expanded="false" signature="6043:6064" ph="..." />
-            <marker date="1508022390000" expanded="false" signature="6232:6276" ph="..." />
-            <marker date="1508022390000" expanded="false" signature="6979:6986" ph="»" />
-            <marker date="1508022390000" expanded="false" signature="7365:7372" ph="»" />
-            <marker date="1508022390000" expanded="false" signature="7783:7790" ph="»" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/ansible.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/underCons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/justified-nav.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css.min">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/command.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkpict/host1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkpict/host2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkpict/hostname.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newtemplete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkpict/netstat5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkpict/netstat3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkpict/netstat2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkpict/netstat1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkpict/ifconfig3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkpict/ifconfig2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/networkpict/ifconfig1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/networkpict/host2.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -493,54 +430,412 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/underCons.html" />
-    <entry file="file://$PROJECT_DIR$/python/underCons.html">
+    <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/amodule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="98" column="386" lean-forward="true" selection-start-line="97" selection-start-column="12" selection-end-line="98" selection-end-column="386" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ansible/ansible.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        <state relative-caret-position="262">
+          <caret line="106" column="43" lean-forward="true" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/aplaybook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="107" column="146" lean-forward="false" selection-start-line="107" selection-start-column="146" selection-end-line="107" selection-end-column="146" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/aroles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="108" column="143" lean-forward="false" selection-start-line="108" selection-start-column="143" selection-end-line="108" selection-end-column="143" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/atemplates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="99" column="147" lean-forward="false" selection-start-line="99" selection-start-column="147" selection-end-line="99" selection-end-column="147" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/newtemplete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/compressedfiles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1319">
+          <caret line="110" column="153" lean-forward="false" selection-start-line="110" selection-start-column="153" selection-end-line="110" selection-end-column="153" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/filemanagement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="101" column="152" lean-forward="false" selection-start-line="101" selection-start-column="152" selection-end-line="101" selection-end-column="152" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/filepermissions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="99" column="71" lean-forward="true" selection-start-line="99" selection-start-column="71" selection-end-line="99" selection-end-column="71" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/filestransfer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="110" column="150" lean-forward="false" selection-start-line="110" selection-start-column="150" selection-end-line="110" selection-end-column="150" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/firewall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="110" column="16" lean-forward="true" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/introtolinux.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="113" column="150" lean-forward="false" selection-start-line="113" selection-start-column="150" selection-end-line="113" selection-end-column="150" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/networkutilities.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="112" column="154" lean-forward="false" selection-start-line="112" selection-start-column="154" selection-end-line="112" selection-end-column="154" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/newtemplete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="96" column="149" lean-forward="false" selection-start-line="96" selection-start-column="149" selection-end-line="96" selection-end-column="149" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/packageinstall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="110" column="152" lean-forward="false" selection-start-line="110" selection-start-column="152" selection-end-line="110" selection-end-column="152" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/processmanagement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="110" column="155" lean-forward="false" selection-start-line="110" selection-start-column="155" selection-end-line="110" selection-end-column="155" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/textediting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="110" column="150" lean-forward="false" selection-start-line="110" selection-start-column="150" selection-end-line="110" selection-end-column="150" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents/virtualbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="111" column="148" lean-forward="false" selection-start-line="111" selection-start-column="148" selection-end-line="111" selection-end-column="148" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/aws.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="91" column="139" lean-forward="false" selection-start-line="91" selection-start-column="139" selection-end-line="91" selection-end-column="139" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/newtemplete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="98" column="147" lean-forward="false" selection-start-line="98" selection-start-column="147" selection-end-line="98" selection-end-column="147" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/pclass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="98" column="142" lean-forward="false" selection-start-line="98" selection-start-column="142" selection-end-line="98" selection-end-column="142" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/phiera.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="98" column="142" lean-forward="false" selection-start-line="98" selection-start-column="142" selection-end-line="98" selection-end-column="142" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/pmanifest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="97" column="145" lean-forward="false" selection-start-line="97" selection-start-column="145" selection-end-line="97" selection-end-column="145" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/pmodules.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="98" column="144" lean-forward="false" selection-start-line="98" selection-start-column="144" selection-end-line="98" selection-end-column="144" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/pmodulespackage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="97" column="151" lean-forward="false" selection-start-line="97" selection-start-column="151" selection-end-line="97" selection-end-column="151" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/pmodulestemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="97" column="152" lean-forward="false" selection-start-line="97" selection-start-column="152" selection-end-line="97" selection-end-column="152" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/pmoremanifest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="97" column="149" lean-forward="false" selection-start-line="97" selection-start-column="149" selection-end-line="97" selection-end-column="149" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/pnode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="98" column="141" lean-forward="false" selection-start-line="98" selection-start-column="141" selection-end-line="98" selection-end-column="141" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/ppath.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="97" column="141" lean-forward="false" selection-start-line="97" selection-start-column="141" selection-end-line="97" selection-end-column="141" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/puppet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="95" column="142" lean-forward="false" selection-start-line="95" selection-start-column="142" selection-end-line="95" selection-end-column="142" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devops/rolesandprofiles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="98" column="152" lean-forward="false" selection-start-line="98" selection-start-column="152" selection-end-line="98" selection-end-column="152" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git/git.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="124" column="136" lean-forward="false" selection-start-line="124" selection-start-column="136" selection-end-line="124" selection-end-column="136" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git/gitcommand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="122" column="143" lean-forward="false" selection-start-line="122" selection-start-column="143" selection-end-line="122" selection-end-column="143" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git/newtemplete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="116" column="144" lean-forward="false" selection-start-line="116" selection-start-column="144" selection-end-line="116" selection-end-column="144" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/underCons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/vagrant/newtemplete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1304">
-          <caret line="96" column="45" lean-forward="false" selection-start-line="96" selection-start-column="45" selection-end-line="96" selection-end-column="45" />
+        <state relative-caret-position="301">
+          <caret line="111" column="146" lean-forward="false" selection-start-line="111" selection-start-column="146" selection-end-line="111" selection-end-column="146" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1508022390000" expanded="false" signature="5725:5769" ph="..." />
-            <marker date="1508022390000" expanded="false" signature="6043:6064" ph="..." />
-            <marker date="1508022390000" expanded="false" signature="6232:6276" ph="..." />
-            <marker date="1508022390000" expanded="false" signature="6979:6986" ph="»" />
-            <marker date="1508022390000" expanded="false" signature="7365:7372" ph="»" />
-            <marker date="1508022390000" expanded="false" signature="7783:7790" ph="»" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vagrant/vagrant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="125" column="144" lean-forward="false" selection-start-line="125" selection-start-column="144" selection-end-line="125" selection-end-column="144" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
