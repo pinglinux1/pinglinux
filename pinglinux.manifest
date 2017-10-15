@@ -1,0 +1,88 @@
+CACHE MANIFEST
+#created by Shishir Bhandari 10/15/2017
+
+#####################################################
+CACHE:
+
+#Main Page
+index.html
+
+# Ansible pages
+ansible/amodule.html
+ansible/ansible.html
+ansible/aplaybook.html
+ansible/aroles.html
+ansible/atemplates.html
+ansible/newtemplete.html
+
+#Linux contents
+contents/compressedfiles.html
+contents/contact.html
+contents/filemanagement.html
+contents/filepermissions.html
+contents/filestransfer.html
+contents/firewall.html
+contents/introtolinux.html
+contents/networkutilities.html
+contents/newtemplete.html
+contents/packageinstall.html
+contents/processmanagement.html
+contents/textediting.html
+contents/virtualbox.html
+
+#Devops Contents
+devops/aws.html
+devops/newtemplete.html
+devops/pclass.html
+devops/phiera.html
+devops/pmanifest.html
+devops/pmodules.html
+devops/pmodulespackage.html
+devops/pmodulestemplate.html
+devops/pmoremanifest.html
+devops/pnode.html
+devops/ppath.html
+devops/puppet.html
+devops/rolesandprofiles.html
+
+#Git content
+git/git.html
+git/gitcommand.html
+git/newtemplete.html
+
+#Python Content
+python/underCons.html
+
+# Vagrant content
+vagrant/newtemplete.html
+vagrant/vagrant.html
+
+#CACHE CSS
+css/bootstrap-theme.css
+css/bootstrap-theme.css.mp
+css/bootstrap-theme.min.css
+css/bootstrap.css
+css/bootstrap.css.min
+css/bootstrap.min.css
+css/command.css
+css/home.css
+css/justified-nav.css
+
+### CACHE IMAGES NOW ###
+
+# Ansible images
+ansiblepict/acopy.png
+ansiblepict/afile.png
+ansiblepict/ansible1.png
+ansiblepict/ansible2.png
+ansiblepict/ansible3.png
+ansiblepict/apackage.png
+ansiblepict/aservice.png
+ansiblepict/ashell.png
+ansiblepict/ausers.png
+ansiblepict/playbook.png
+ansiblepict/playbook2.png
+ansiblepict/playbook3.png
+ansiblepict/playbook4.png
+ansiblepict/playbook5.png
+ansiblepict/roles.png

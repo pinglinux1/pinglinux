@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d39f311e-1e91-4b34-abd4-d7aa549c98b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/compressedfiles.html" afterPath="$PROJECT_DIR$/contents/compressedfiles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/filemanagement.html" afterPath="$PROJECT_DIR$/contents/filemanagement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/filepermissions.html" afterPath="$PROJECT_DIR$/contents/filepermissions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/filestransfer.html" afterPath="$PROJECT_DIR$/contents/filestransfer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/firewall.html" afterPath="$PROJECT_DIR$/contents/firewall.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/introtolinux.html" afterPath="$PROJECT_DIR$/contents/introtolinux.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/networkutilities.html" afterPath="$PROJECT_DIR$/contents/networkutilities.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/amodule.html" afterPath="$PROJECT_DIR$/ansible/amodule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ansible/ansible.html" afterPath="$PROJECT_DIR$/ansible/ansible.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/newtemplete.html" afterPath="$PROJECT_DIR$/contents/newtemplete.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/packageinstall.html" afterPath="$PROJECT_DIR$/contents/packageinstall.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/processmanagement.html" afterPath="$PROJECT_DIR$/contents/processmanagement.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/textediting.html" afterPath="$PROJECT_DIR$/contents/textediting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contents/virtualbox.html" afterPath="$PROJECT_DIR$/contents/virtualbox.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,35 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="filepermissions.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contents/filepermissions.html">
+      <file leaf-file-name="ansible.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ansible/ansible.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filestransfer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contents/filestransfer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="firewall.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contents/firewall.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+            <state relative-caret-position="75">
+              <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -87,8 +57,8 @@
       <file leaf-file-name="newtemplete.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contents/newtemplete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+            <state relative-caret-position="30">
+              <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -99,8 +69,8 @@
       <file leaf-file-name="packageinstall.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contents/packageinstall.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+            <state relative-caret-position="30">
+              <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -111,8 +81,8 @@
       <file leaf-file-name="processmanagement.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contents/processmanagement.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+            <state relative-caret-position="30">
+              <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -123,8 +93,8 @@
       <file leaf-file-name="textediting.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contents/textediting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -132,7 +102,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="virtualbox.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="amodule.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ansible/amodule.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="virtualbox.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contents/virtualbox.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="376">
@@ -140,6 +122,16 @@
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pinglinux.manifest" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pinglinux.manifest">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="87" column="21" lean-forward="false" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,8 +162,6 @@
         <option value="$PROJECT_DIR$/underCons.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/python/underCons.html" />
-        <option value="$PROJECT_DIR$/ansible/amodule.html" />
-        <option value="$PROJECT_DIR$/ansible/ansible.html" />
         <option value="$PROJECT_DIR$/ansible/aplaybook.html" />
         <option value="$PROJECT_DIR$/ansible/aroles.html" />
         <option value="$PROJECT_DIR$/ansible/atemplates.html" />
@@ -201,11 +191,14 @@
         <option value="$PROJECT_DIR$/contents/firewall.html" />
         <option value="$PROJECT_DIR$/contents/introtolinux.html" />
         <option value="$PROJECT_DIR$/contents/networkutilities.html" />
+        <option value="$PROJECT_DIR$/contents/virtualbox.html" />
+        <option value="$PROJECT_DIR$/pinglinux.manifest" />
         <option value="$PROJECT_DIR$/contents/newtemplete.html" />
         <option value="$PROJECT_DIR$/contents/packageinstall.html" />
         <option value="$PROJECT_DIR$/contents/processmanagement.html" />
         <option value="$PROJECT_DIR$/contents/textediting.html" />
-        <option value="$PROJECT_DIR$/contents/virtualbox.html" />
+        <option value="$PROJECT_DIR$/ansible/ansible.html" />
+        <option value="$PROJECT_DIR$/ansible/amodule.html" />
       </list>
     </option>
   </component>
@@ -248,26 +241,6 @@
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="ansible" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="contents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="devops" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="git" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="vagrant" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
@@ -346,11 +319,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/networkpict/host1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/networkpict/hostname.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -426,26 +394,6 @@
         <state relative-caret-position="-191">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/amodule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="98" column="386" lean-forward="true" selection-start-line="97" selection-start-column="12" selection-end-line="98" selection-end-column="386" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ansible/ansible.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="106" column="43" lean-forward="true" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -768,10 +716,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contents/virtualbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pinglinux.manifest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="87" column="21" lean-forward="false" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/contents/newtemplete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+        <state relative-caret-position="30">
+          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -780,8 +746,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contents/packageinstall.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+        <state relative-caret-position="30">
+          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -790,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contents/processmanagement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+        <state relative-caret-position="30">
+          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -800,18 +766,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contents/textediting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contents/virtualbox.html">
+    <entry file="file://$PROJECT_DIR$/ansible/ansible.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        <state relative-caret-position="75">
+          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible/amodule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
