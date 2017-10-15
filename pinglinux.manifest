@@ -17,7 +17,6 @@ ansible/newtemplete.html
 
 #Linux contents
 contents/compressedfiles.html
-contents/contact.html
 contents/filemanagement.html
 contents/filepermissions.html
 contents/filestransfer.html
@@ -88,4 +87,4 @@ ansiblepict/playbook5.png
 ansiblepict/roles.png
 
 FALLBACK:
-fallback.html
+contents/contact.html fallback.html
