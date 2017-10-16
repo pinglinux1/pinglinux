@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://pinglinux.com/</loc>
+  <lastmod>2017-10-16T11:26:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/introtolinux.html</loc>
+  <lastmod>2017-10-15T00:16:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/filemanagement.html</loc>
+  <lastmod>2017-10-15T00:16:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/textediting.html</loc>
+  <lastmod>2017-10-15T01:34:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/filepermissions.html</loc>
+  <lastmod>2017-10-15T00:16:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/packageinstall.html</loc>
+  <lastmod>2017-10-15T01:34:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/processmanagement.html</loc>
+  <lastmod>2017-10-15T01:34:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/networkutilities.html</loc>
+  <lastmod>2017-10-15T00:16:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/compressedfiles.html</loc>
+  <lastmod>2017-10-15T00:16:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/filestransfer.html</loc>
+  <lastmod>2017-10-15T00:16:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/firewall.html</loc>
+  <lastmod>2017-10-15T00:16:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/vagrant/vagrant.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/puppet.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/ansible/ansible.html</loc>
+  <lastmod>2017-10-15T01:34:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/git/git.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/python/underCons.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contact.html</loc>
+  <lastmod>2017-10-10T04:31:45+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/virtualbox.html</loc>
+  <lastmod>2017-10-15T00:16:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/index.html</loc>
+  <lastmod>2017-10-16T11:26:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/contents/contact.html</loc>
+  <lastmod>2017-10-10T04:31:45+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/aws.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/pmanifest.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/ansible/amodule.html</loc>
+  <lastmod>2017-10-15T01:34:02+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/git/gitcommand.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/pmoremanifest.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/ansible/aplaybook.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/pclass.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/ansible/atemplates.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/pnode.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/ansible/aroles.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/ppath.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/pmodules.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/phiera.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/pmodulestemplate.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/pmodulespackage.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+<url>
+  <loc>http://pinglinux.com/devops/rolesandprofiles.html</loc>
+  <lastmod>2017-10-15T00:06:01+00:00</lastmod>
+</url>
+</urlset>
