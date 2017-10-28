@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	 <!-- Copy this two files and save them in the dir named js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Meta tag provides the information about the html document -->
+
+    <meta name="description" content="Understand disk Partition and File System in Linux. Learn by viewing realtime examples.">
+    <meta name="author" content="Bikram Bhandari">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title> Disk Partition and File System</title>
+
+     <style type="text/css">
+    section {
+        margin-right: 15%;
+        display: block;
+    }
+         section h3 {
+             color: blue;
+         }
+    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Custom styles for this template which is defined in the css folder-->
+    <link href="../css/justified-nav.css" rel="stylesheet">
+   <link href="../css/home.css" rel="stylesheet">
+   <link href="../css/command.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <!-- Script to connect, create fb button-->
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted title">Ping Linux</h3>
+       <div class="bs-example">
+	<nav >
+	<ul class="nav nav-justified nav-pills" role="tablist" >
+            <li class="active badge"><a href="../index.html">Home</a></li>
+            <!----submenu in the contents ------->
+
+            <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Contents<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+
+                            <li><a href="../contents/introtolinux.html">Into to Linux</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filemanagement.html">File management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/textediting.html">Text Editing & processing</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filepermissions.html">File Permissions,Users and Groups</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/packageinstall.html">Package Install and  Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/processmanagement.html">Process Management</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/networkutilities.html">Network Utilities</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/compressedfiles.html">Compressed Files & logging</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/filestransfer.html">Files transfer</a></li>
+                            <li class="divider"></li>
+                            <li><a href="../contents/firewall.html">Firewalls and Security </a></li>
+                        </ul>
+                    </li>
+                <li class="dropdown badge active col-md-6"><a href="#" data-toggle="dropdown" class="dropdown-toggle" >Devops<b class="caret"></b></a>
+                        <ul class="dropdown-menu col-xs-12" role="menu" style="text-align:center;" aria-labelledby="dLabel">
+			<li><a href="../vagrant/vagrant.html">Vagrant</a></li>                                                     <li class="divider"></li>
+                                <li><a href="../devops/puppet.html">Puppet</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../ansible/ansible.html"> Ansible</a></li>
+                                <li class="divider"></li>
+                                <li><a href="../git/git.html">Git</a></li>
+                        </ul>
+            </li>
+            <li class="active badge"><a href="contact.html">Contact</a></li>
+        </ul>
+
+        </nav>
+      </div>
+     </div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-7">
+          <h2>Partition and File System in Linux</h2>
+            <!-- Display fb button here -->
+                      <div style="display: block;text-align: right;" class="fb-share-button" data-href="http://www.pinglinux.com/contents/.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.pinglinux.com%2F&amp;src=sdkpreparse">Share</a></div>
+	   <hr></hr>
+          <p class="text-danger bluefont">What is Disk Partition ?</p>
+          <p class="pfont">
+              As the name implies, disk partition is simply partitioning or dividing
+              the disk into more than one part.
+          </p>
+            <p style="font-size: larger; font-weight: 800"> Why is it important to partition a disk?</p>
+            <p style="font-weight: 500">==> Disk partition has been followed for many years.
+            Disk partitioning is important because of the following reasons:
+                <ul>
+            <li><strong> Preserving the contents:</strong></li> <em> Lets say we have
+        divided our disk into 3 partitions. If the first partition (partition contains sectors of hard disk)
+            gets damaged, the remaining 2 partitions wont be affected.
+        </em>
+            <li><strong>Security: </strong></li>
+            <em>If we have multiple partitions, if the data in one partition gets breached,
+            the data in remaining partitions may still be safe. </em>
+            <li><strong>Preventing system from unexpected errors: </strong> </li>
+            <em>Lets say, we have not partitioned our disk, and we only have one main partition.
+            If a developer develops application that continuously generates error file, then whole
+                system may freeze. In other words, rest of the application may not function.
+                If we had partitioned and assigned separate partition for developer,
+                then only that particular partition may be affected and applications in other
+                partitions would function normally.
+            </em>
+        </ul>
+            <hr/>
+            </p>
+	  </div>
+          <img src="../partition_images/partition.jpeg" width="30%" height="30%" align="middle" style="margin-top: 15%; margin-bottom: " alt="partition example picture">
+          <br/><p style="margin-left: 70%"> <em>Img: Partition example</em></p>
+		<div class="col-lg-5">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- subpages -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5629969818459684"
+     data-ad-slot="1589838655"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		</div>
+	</div>
+
+        <section>
+            <h3>Understanding Partition</h3>
+            <p> It is very important to know the basics of hard drive
+            in order to understand the partition. Most of us are used to using windows
+                and windows partition. The concept of partition in all operating system
+                environment is same. However, the naming system in Linux is different than
+                that of Windows. Instead of using letters like C, D, ... etc, we use /dev/sda,
+                /dev/sdb, /dev/sd1, ..etc in Linux. Dev is an abbreviation for device and sd is an
+                abbreviation for SCSI device.
+            </p>
+        </section>
+	<!-- first row in intolinux -->
+	<div class="row">
+	  <div class="col-lg-6">
+	 	<p class="pfont">1) Finding your current location in the system</p>
+                <div class="command">pwd (Present working directory)</div>
+			<p> sh-3.2# pwd </br>
+				/Users/Biks/Desktop </br>
+				sh-3.2# </br> </p>
+	  	</div>
+	   <div class="col-lg-6">
+	   <p class="pfont">2) Changing the location or directory back and forth </br></p>
+		<div class="command">cd ../ (change directory)</br> cd dirname/ </div>
+			<pre style="text-align:left;direction:rtl;">
+			sh-3.2# pwd
+			/Users/Biks/Desktop
+			sh-3.2# cd ../
+			sh-3.2# pwd
+			/Users/Biks
+			sh-3.2# cd Desktop/
+			sh-3.2# pwd
+			/Users/Biks/Desktop
+			sh-3.2#</pre>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-lg-6">
+                <p class="pfont">3) Making the directory</p>
+                <div class="command">mkdir (make directory) </div>
+                         <pre style="text-align:left;direction:rtl;">
+             		sh-3.2# ls
+			sh-3.2# mkdir newdirectory
+			sh-3.2# ls
+			newdirectory
+			sh-3.2#</pre>
+		</div>
+           <div class="col-lg-6">
+           <p class="pfont">4) Renameing the directory </br></p>
+                <div class="command">mv (move) </div>
+                        <pre style="text-align:left;direction:rtl;">
+                        sh-3.2# ls
+			newdirectory
+			sh-3.2# # #we will rename the newdirctory to olddirectory
+			sh-3.2# mv newdirectory olddirectory
+			sh-3.2# ls
+			olddirectory
+			sh-3.2#
+			</pre>
+        </div>
+
+
+      </div>
+          <div class="row">
+          <div class="col-lg-6">
+                <p class="pfont">5) Delete the directory</p>
+                <div class="command">rm -f (remove)</div>
+                         <pre style="text-align:left;direction:rtl;">
+ 				sh-3.2# ls
+				olddirectory
+				sh-3.2# rm -rf olddirectory/
+				sh-3.2# ls
+				sh-3.2#
+                         </pre>
+                </div>
+           <div class="col-lg-6">
+           <p class="pfont">6) Move the directory or files </br></p>
+                <div class="command">mv  </div>
+                        <pre style="text-align:left;direction:rtl;">
+                         sh-3.2# ls
+			 sh-3.2# mkdir pinglinux
+			 sh-3.2# ls
+			 pinglinux
+			 sh-3.2# mv pinglinux/ ../
+			 sh-3.2# ls
+			 sh-3.2#
+                        </pre>
+        </div>
+
+
+      </div>
+
+         <div class="row">
+          <div class="col-lg-6">
+                <p class="pfont">7) Creating the files</p>
+                <div class="command">touch filename </div>
+                         <pre style="text-align:left;direction:rtl;">
+        				sh-3.2# ls
+					sh-3.2# touch file1 file2 file3
+					sh-3.2# touch file4
+					sh-3.2# ls
+					file1	file2	file3	file4
+					sh-3.2#
+                         </pre>
+                </div>
+           <div class="col-lg-6">
+           <p class="pfont">8) Creating the files.Vi lets you add the contents to the file, where as touch only creates the file. </br></p>
+                <div class="command">vi filename  </div>
+                        <pre style="text-align:left;direction:rtl;">
+        			sh-3.2# vi file5
+				sh-3.2# ls
+				file5
+				sh-3.2#
+                        </pre>
+        </div>
+
+
+      </div>
+
+          <div class="row">
+          <div class="col-lg-6">
+                <p class="pfont">9) Listing the files and directories in current location </p>
+                <div class="command">ls (listing)</br> ls -a shows the hidden files as well </br> ls -l shows the long listing of the file with information.</div>
+                         <pre style="text-align:left;direction:rtl;">
+                         sh-3.2# ls
+			file5
+			sh-3.2# ls -a
+			.	..	file5
+			sh-3.2# ls -l
+			total 8
+			-rw-r--r--  1 root  staff  4 Dec 20 16:21 file5
+			sh-3.2#
+                         </pre>
+                </div>
+           <div class="col-lg-6">
+           <p class="pfont">10) Display the contents of the files </br></p>
+                <div class="command">cat filename </div>
+                        <pre style="text-align:left;direction:rtl;">
+                        sh-3.2# vi file1 # and Inserted a b c d e f
+			sh-3.2# cat file1
+			a
+			b
+			c
+			d
+			e
+			f
+			sh-3.2#
+                        </pre>
+        </div>
+
+
+      </div>
+
+          <div class="row">
+          <div class="col-lg-6">
+                <p class="pfont">11) Displaying the contents from top of the file</p>
+                <div class="command">head </div>
+                         <pre style="text-align:left;direction:rtl;">
+       			 sh-3.2# head -3 file1
+			 a
+			 b
+			 c
+			 sh-3.2#
+                         </pre>
+                </div>
+           <div class="col-lg-6">
+           <p class="pfont">12) Displaying the contents from bottom of the file </br></p>
+                <div class="command">tail </div>
+                        <pre style="text-align:left;direction:rtl;">
+                        sh-3.2# tail -3 file1
+			d
+			e
+			f
+			sh-3.2#
+                        </pre>
+        </div>
+
+
+      </div>
+
+	 <div class="row">
+          <div class="col-lg-6">
+                <p class="pfont">13) View a text file one page at a time.Press spacebar to go to next page </p>
+                <div class="command">more </div>
+                         <pre style="text-align:left;direction:rtl;">
+  		          sh-3.2# more filename
+                         </pre>
+                </div>
+           <div class="col-lg-6">
+           <p class="pfont">14) View a text file one page at a time.And allows to navigate up and down which is not possible with more command  </br></p>
+                <div class="command">less </div>
+                        <pre style="text-align:left;direction:rtl;">
+			sh-3.2# less filename
+                        </pre>
+        </div>
+
+
+      </div>
+
+	 <div class="row">
+          <div class="col-lg-6">
+                <p class="pfont">15) Counting the number of lines and word in the file</p>
+                <div class="command">wc (word count)</div>
+                         <pre style="text-align:left;direction:rtl;">
+			 sh-3.2# wc file1
+      			 6       6      12 file1
+			 sh-3.2#
+                         </pre>
+                </div>
+           <div class="col-lg-6">
+           <p class="pfont">16) copying the file and directory </br></p>
+                <div class="command">cp (copy)</div>
+                        <pre style="text-align:left;direction:rtl;">
+                          sh-3.2# ls
+			  file1
+			  sh-3.2# cp file1 file2
+			  sh-3.2# ls
+			  file1 file2
+			  sh-3.2#
+                        </pre>
+        </div>
+
+
+      </div>
+
+ 	<div class="row">
+          <div class="col-lg-6">
+                <p class="pfont">17) Sends the  output of one command to another one for further processing</p>
+                <div class="command"> | pipe</div>
+                         <pre style="text-align:left;direction:rtl;">
+			 sh-3.2# cat file1 | grep a
+			 a
+			 sh-3.2# # the result was a b/c file contains letter a
+                        sh-3.2#
+			</pre>
+                </div>
+           <div class="col-lg-6">
+           <p class="pfont">18) Searches the contents of files or commands that matches certain criteria </br></p>
+                <div class="command">grep </div>
+                                  <pre style="text-align:left;direction:rtl;">
+			 sh-3.2# cat file1 | grep a
+                         a
+                         sh-3.2# # the result was a b/c file contains letter a
+                        sh-3.2#
+			</pre>
+                 </div>
+
+        </div>
+	<div class="row">
+         <div class="col-lg-8">
+           <p class="pfont">16) Creating the link of the file and directories </br></p>
+                <div class="command">ln (link)</div>
+                        <pre style="text-align:left;direction:rtl;">
+                          sh-3.2# ls
+                          file1
+                          sh-3.2# ln -s file1 softlinkfile
+                          sh-3.2# ln file1 hardlinkfile
+                          sh-3.2# ls -l
+                          total 24
+                          -rw-r--r--  2 root  staff  12 Dec 20 16:32 file1
+                          -rw-r--r--  2 root  staff  12 Dec 20 16:32 hardlinkfile
+                          lrwxr-xr-x  1 root  staff   5 Dec 20 16:34 softlinkfile -> file1
+                          sh-3.2#
+           <p class="pfont"> Note:Following are the differeces between hardlink and soft links:
+Hard links have same inode numbers while softlinks do not
+Hard links have actual file contents but softlinks are just pathway
+Removing hard link just affects one file but removing original file affects the softlink.
+Hard links cannot be created for the directory but softlinks can be created for directory.
+ </br></p>
+
+                        </pre>
+        </div>
+	</div>
+
+
+
+
+     <hr></hr>
+
+    </div> <!-- /container -->
+  <!-- Jumbotron -->
+      <div class="jumbotron footerdev">
+        <h1>Smart Technology begins here!!</h1>
+        <p> Welcome to the site. Here you can find useful information about linux command, there usages, as well as the devops tools and the installation process.</p>
+        <p><a class="btn btn-primary " href="introtolinux.html" role="button">Get started today</a></p>
+      </div>
+<!-- Site footer -->
+
+      <footer class="footer copyright">
+        <p>&copy; Pinglinux 2014</p>
+      </footer>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
