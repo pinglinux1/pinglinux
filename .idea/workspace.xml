@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d39f311e-1e91-4b34-abd4-d7aa549c98b9" name="Default" comment="" />
+    <list default="true" id="d39f311e-1e91-4b34-abd4-d7aa549c98b9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,21 +13,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-548">
-              <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="22" />
+            <state relative-caret-position="351">
+              <caret line="146" column="11" lean-forward="true" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partition.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="partition.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contents/partition.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1424">
-              <caret line="119" column="70" lean-forward="true" selection-start-line="119" selection-start-column="70" selection-end-line="119" selection-end-column="70" />
+            <state relative-caret-position="566">
+              <caret line="119" column="70" lean-forward="false" selection-start-line="119" selection-start-column="70" selection-end-line="119" selection-end-column="70" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -41,7 +43,7 @@
       <file leaf-file-name="filemanagement.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contents/filemanagement.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-912">
+            <state relative-caret-position="780">
               <caret line="52" column="50" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="413" selection-end-column="0" />
               <folding />
             </state>
@@ -192,8 +194,8 @@
         <option value="$PROJECT_DIR$/contents/processmanagement.html" />
         <option value="$PROJECT_DIR$/contents/textediting.html" />
         <option value="$PROJECT_DIR$/pinglinux.manifest" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/contents/partition.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -203,7 +205,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="712" />
@@ -224,23 +226,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="contents" type="462c0819:PsiDirectoryNode" />
+              <item name="pinglinux" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pinglinux" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -275,10 +272,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="716" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27786753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -649,24 +646,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contents/filemanagement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-912">
+        <state relative-caret-position="780">
           <caret line="52" column="50" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="413" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-548">
-          <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contents/partition.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1424">
-          <caret line="119" column="70" lean-forward="true" selection-start-line="119" selection-start-column="70" selection-end-line="119" selection-end-column="70" />
+        <state relative-caret-position="566">
+          <caret line="119" column="70" lean-forward="false" selection-start-line="119" selection-start-column="70" selection-end-line="119" selection-end-column="70" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -675,6 +664,14 @@
             <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#pre#0;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="146" column="11" lean-forward="true" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
